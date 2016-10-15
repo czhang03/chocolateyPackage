@@ -1,0 +1,1 @@
+﻿Install-ChocolateyZipPackage -packageName 'you-get' -UnzipLocation $(Split-Path -Parent $MyInvocation.MyCommand.Definition) -Url 'https://github.com/soimort/you-get/releases/download/v0.4.486/you-get-0.4.486-win32-full.7z'

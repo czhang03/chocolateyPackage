@@ -1,0 +1,1 @@
+﻿Install-ChocolateyZipPackage -packageName 'vim-nightly' -UnzipLocation $(Split-Path -Parent $MyInvocation.MyCommand.Definition) -Url64bit 'https://github.com/vim/vim-win32-installer/releases/download/v7.4.2028/gvim_7.4.2028_x64.zip' -Checksum64 'B6877FC38824B49C56EC622D8FFECDB33590533C536ED14011B85A41A03765EE' -ChecksumType64 'sha256'

@@ -1,0 +1,1 @@
+﻿Install-ChocolateyZipPackage -packageName 'you-get' -UnzipLocation $(Split-Path -Parent $MyInvocation.MyCommand.Definition) -Url 'https://github.com/soimort/you-get/releases/download/v0.4.455/you-get-0.4.455-win32-full.7z' -Checksum '5BD552E2216158E6864E796918BE1D9A13354BDFB611D2D8FC958D84FB2E0C7A' -ChecksumType 'sha256'

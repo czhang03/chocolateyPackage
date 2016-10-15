@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>vim-nightly</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>7.4.2066-nightly</version>
+    <packageSourceUrl>https://github.com/chantisnake/vim-nightly-choco</packageSourceUrl>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
+    <!-- ============================== -->
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>vim-nightly</title>
+    <authors>vim</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://github.com/vim/vim-win32-installer</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/chantisnake/vim-nightly-choco/master/vim.png</iconUrl>
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
+      <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>vim-nightly vim nightly-build editor</tags>
+    <summary>vim nightly build</summary>
+    <description> 
+          This is the vim nightly build, the project can be found on [vim-win32-installer](https://github.com/vim/vim-win32-installer)
+          The chocolatey package repo can be found: [vim-nightly-choco](https://github.com/chantisnake/vim-nightly-choco)
+          * This project may not support 32-bits any more only 64-bits machine will be supported
+          
+      </description>
+    <releaseNotes>Nightly Vim Windows build snapshots ([more information](http://vim.wikia.com/wiki/Where_to_download_Vim)).
+
+### Changes:
+
+* [7.4.2066](https://github.com/vim/vim/releases/tag/v7.4.2066) getcompletion() not well tested. Solution: Add more testing.
+* [7.4.2065](https://github.com/vim/vim/releases/tag/v7.4.2065) Compiler warns for uninitialzed variable. (John Marriott) Solution: Set lnum to the right
+* [7.4.2064](https://github.com/vim/vim/releases/tag/v7.4.2064) Coverity warns for possible buffer overflow. Solution: Use vim_strcat() instead of strcat
+* [7.4.2063](https://github.com/vim/vim/releases/tag/v7.4.2063) eval.c is still too big. Solution: Split off internal functions to evalfunc.c.
+* [7.4.2062](https://github.com/vim/vim/releases/tag/v7.4.2062) Using dummy variable to compute struct member offset. Solution: Use offsetof().
+* [7.4.2061](https://github.com/vim/vim/releases/tag/v7.4.2061) qf_init_ext() is too big. Solution: Move code to qf_parse_line() (Yegappan Lakshmanan)
+* [7.4.2060](https://github.com/vim/vim/releases/tag/v7.4.2060) Wrong file name. Solution: Fix typo.
+* [7.4.2059](https://github.com/vim/vim/releases/tag/v7.4.2059) Non-Unix builds fail. Solution: Update Makefiles for new files.
+* [7.4.2058](https://github.com/vim/vim/releases/tag/v7.4.2058) eval.c is too big. Solution: Move user functions to userfunc.c
+* [7.4.2057](https://github.com/vim/vim/releases/tag/v7.4.2057) eval.c is too big. Solution: Move List functions to list.c
+* [7.4.2056](https://github.com/vim/vim/releases/tag/v7.4.2056) Build fails. Solution: Add missing changes.
+* [7.4.2055](https://github.com/vim/vim/releases/tag/v7.4.2055) eval.c is too big. Solution: Move Dictionary functions to dict.c.
+* Update runtime files.
+
+Download and execute the most recent gvim_7.._x86.exe file to install Vim.
+The exe file contains the (32bit) installer while the .zip files contain an
+archive of the 32bit (_x86) or 64bit versions (_x64). To install it, extract
+the archive and update your PATH variable. The installer will do that
+automatically and provide some additional extensions (e.g. Edit with Vim menu).
+The gvim...pdb.zip file only contains the corresponding pdb files for debugging the binaries.
+
+If you need a dynamic interface to Perl, Python2, Python3, Ruby, TCL, Lua or Racket/MzScheme,
+make sure you also install the following. Vim will work without it, but some Plugin
+might need this additional dependency. (e.g. Gundo needs a working Pyhton2 installation,
+Command-T needs a working Ruby installation and Neocomplete needs a working Lua
+installation). This means, those interpreters have to be installed in addition to Vim.
+Without it Vim won't be able to use that feature! You can find those interperters here:
+
+* [ActivePerl](http://www.activestate.com/activeperl/downloads) 5.22
+* [ActiveTcl](http://www.activestate.com/activetcl/downloads) 8.6
+* [LuaBinaries](http://luabinaries.sourceforge.net/download.html) 5.3
+* [Python](https://www.python.org/downloads/) 2.7
+* [Python](https://www.python.org/downloads/) 3.4
+* [Racket](https://download.racket-lang.org/) 6.4
+* [RubyInstaller](http://rubyinstaller.org/downloads/) 2.2
+
+Make sure that you install the same architecture (32bit/64bit) that matches your Vim installation.
+</releaseNotes>
+    <!-- =============================== -->
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+        <dependency id="" version="__MINIMUM_VERSION__" />
+        <dependency id="" version="[__EXACT_VERSION__]" />
+        <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+        <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+        <dependency id="" />
+        <dependency id="chocolatey-uninstall.extension" />
+      </dependencies>-->
+    <!-- chocolatey-uninstall.extension - If supporting 0.9.9.x (or below) and including a chocolateyUninstall.ps1 file to uninstall an EXE/MSI, you probably want to include chocolatey-uninstall.extension as a dependency. Please verify whether you are using a helper function from that package. -->
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
