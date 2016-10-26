@@ -38,23 +38,18 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>shadowsocks</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/shadowsocks/shadowsocks-windows</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/shadowsocks.png</iconUrl>-->
+    <iconUrl>https://github.com/chantisnake/chocolateyPackage/raw/master/shadowsocks-choco/icon.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <licenseUrl>https://github.com/shadowsocks/shadowsocks-windows/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/shadowsocks/shadowsocks-windows</projectSourceUrl>
+    <docsUrl>https://github.com/shadowsocks/shadowsocks-windows/wiki</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://github.com/shadowsocks/shadowsocks-windows/issues</bugTrackerUrl>
     <tags>shadowsocks admin</tags>
     <summary>If you want to keep a secret, you must also hide it from yourself. </summary>
     <description>
-Shadowsocks for Windows
-=======================
-
-[![Build Status]][Appveyor]
-
 [中文说明](https://github.com/shadowsocks/shadowsocks-windows/wiki/Shadowsocks-Windows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
 [full readme](https://github.com/shadowsocks/shadowsocks-windows/blob/master/README.md)
 
