@@ -1,0 +1,1 @@
+﻿Install-ChocolateyZipPackage -packageName 'shadowsocks' -UnzipLocation $(Split-Path -Parent $MyInvocation.MyCommand.Definition) -Url 'https://github.com/shadowsocks/shadowsocks-windows/releases/download/3.3.4/Shadowsocks-3.3.4.zip'-Checksum '7766F436C713DBF3CCC228AACD2B47648492ED92BD3559A25A0CD64A1BBF0F7C' -ChecksumType 'sha256'
