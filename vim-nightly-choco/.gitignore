@@ -1,7 +1,0 @@
-*.swp
-
-.vscode
-
-*.nupkg
-
-.vs/*
