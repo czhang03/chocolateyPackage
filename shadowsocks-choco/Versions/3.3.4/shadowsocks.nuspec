@@ -46,11 +46,6 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <tags>shadowsocks admin</tags>
     <summary>If you want to keep a secret, you must also hide it from yourself. </summary>
     <description>
-Shadowsocks for Windows
-=======================
-
-[![Build Status]][Appveyor]
-
 [中文说明](https://github.com/shadowsocks/shadowsocks-windows/wiki/Shadowsocks-Windows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
 [full readme](https://github.com/shadowsocks/shadowsocks-windows/blob/master/README.md)
 

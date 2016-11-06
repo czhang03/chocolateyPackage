@@ -24,7 +24,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
     <version>0.4.455</version>
-    <packageSourceUrl>https://github.com/chantisnake/you-get-choco</packageSourceUrl>
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage/tree/master/you-get-choco/you-get</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>chantisnake</owners>
     <!-- ============================== -->
@@ -37,12 +37,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://raw.githubusercontent.com/chantisnake/you-get-choco/master/Button_circle_download_128px_1198020_easyicon.net.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <licenseUrl>https://github.com/soimort/you-get/blob/develop/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/soimort/you-get</projectSourceUrl>
+    <docsUrl>https://github.com/soimort/you-get/wiki</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://github.com/soimort/you-get/issues</bugTrackerUrl>
     <tags>you-get admin video-downloader</tags>
     <summary> Dumb downloader that scrapes the web https://you-get.org/ </summary>
     <description>[You-Get](https://you-get.org/) is a tiny command-line utility to download media contents (videos, audios, images) from the Web, in case there is no other handy way to do it.
@@ -83,13 +83,13 @@ Are you a Python programmer? Then check out [the source](https://github.com/soim
 
 Please upgrade to the latest version:
 
-```console
+```
 $ pip3 install --upgrade you-get
 ```
 
 ### SHA1SUMs
 
-```console
+```
 d9c3d4ff90a08dab15121f42390660d56eb6f1ff  dist/you-get-0.4.455-win32.exe
 41760adb51af7f3927d531ef5f355eb0c83ca25d  dist/you-get-0.4.455-win32-full.7z
 ```</releaseNotes>
