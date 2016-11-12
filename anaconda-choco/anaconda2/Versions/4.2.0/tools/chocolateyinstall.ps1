@@ -1,27 +1,31 @@
-﻿$ErrorActionPreference = 'Stop'; # stop on all errors
-
-
-$packageName= 'anaconda2' # arbitrary name for the package, used in messages
-$url        = 'http://repo.continuum.io/archive/Anaconda2-4.1.0-Windows-x86.exe' # download url
-$url64      = 'http://repo.continuum.io/archive/Anaconda2-4.1.0-Windows-x86_64.exe' # 64bit URL here or remove - if installer is both, use $url
-
+﻿$ErrorActionPreference = 'Stop';
+ 
+ 
+$packageName= 'anaconda2'
+$url        = 'http://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86.exe'
+$url64      = 'http://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86_64.exe'
+$ToolsDir   = Get-ToolsLocation
+ 
 $packageArgs = @{
-  packageName   = $packageName
-  fileType      = 'EXE'
-  url           = $url
-  url64bit      = $url64
-  #file         = $fileLocation
-
-  silentArgs    = "/AddToPath=0  /InstallationType=AllUsers /S /D=C:\Program Files\Anaconda2\"
-  validExitCodes= @(0)
-
-  softwareName  = 'anaconda2' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
-  checksum      = 'c4ad4eefdffb6d838424c62c8b524352d8b8e4752382b0a09e9d8b7e9e44b9d4'
-  checksumType  = 'sha256' #default is md5, can also be sha1
-  checksum64    = '7a62880ff9bb7f747d70f518f024dfd1795a26d4130a20d1ff30043d05ec712f'
-  checksumType64= 'sha256' #default is checksumType
+  packageName   = $packageName
+  fileType      = 'EXE'
+  url           = $url
+  url64bit      = $url64
+ 
+  silentArgs    = "/AddToPath=0  /InstallationType=AllUsers /S /D=$(Join-Path $ToolsDir 'Anaconda2')"
+  validExitCodes= @(0)
+ 
+  softwareName  = 'Anaconda2'
+  checksum      = 'a97ca79cb771568d051ef7773d25c0dda407c63e7ec91305f35dff790aeda042'
+  checksumType  = 'sha256'
+  checksum64    = '6254b150edee53000c94e9abfc9c51a2d2e5ef3453d8e7cc7ef0a848d6d3b422'
+  checksumType64= 'sha256'
 }
-
-Write-Host 'installing anaconda2, this can take a long time.'
-Write-Host 'Please sit back and relax'
+ 
+Write-Host 'installing anaconda2, this can take a long time, because the installer will write tons of files on your disk' -ForegroundColor Magenta
+Write-Host 'Please sit back and relax' -ForegroundColor Magenta
+Write-Host 'This usually will take 10-15 mins on an SSD, and about 30 mins on HDD' -ForegroundColor Magenta
+Write-Host ''
+Write-Host 'If you want to make sure the program is running, you can open Task Manager' -ForegroundColor Magenta
+Write-Host 'you will find the installer running in Background Process' -ForegroundColor Magenta
 Install-ChocolateyPackage @packageArgs

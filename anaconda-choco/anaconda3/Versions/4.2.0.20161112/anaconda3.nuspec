@@ -3,22 +3,22 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>anaconda2</id>
-    <title>anaconda2</title>
-    <version>4.2.0</version>
+    <id>anaconda3</id>
+    <title>anaconda3</title>
+    <version>4.2.0.20161112</version>
     <authors>Continuum</authors>
     <owners>Chantisnake</owners>
-    <summary>a python distribution created by continuum</summary>
+    <summary> a python distribution created by continuum</summary>
     <description> 
         a python distribution created by continuum
         this installation:
           1. will not add anaconda python to path,
-          2. will register anaconda python at defualt python2
+          2. will register anaconda python at defualt python3
           3. will install for all user
-          4. will install in your `$ToolsDir\Anaconda2` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) defualt is `C:\Tools\Anaconda2`
+          4. will install in your `$ToolsDir\Anaconda3` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) defualt is `C:\Tools\Anaconda3`
     </description>
     <projectUrl>https://www.continuum.io/why-anaconda</projectUrl>
-    <packageSourceUrl>https://github.com/chantisnake/anaconda_choco/tree/master/anaconda2</packageSourceUrl>
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage/tree/master/anaconda-choco/anaconda3</packageSourceUrl>
     <!--<projectSourceUrl></projectSourceUrl>
     <docsUrl></docsUrl>
     <mailingListUrl></mailingListUrl>
@@ -27,7 +27,7 @@
     <copyright></copyright>
     <licenseUrl>https://docs.continuum.io/anaconda/eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/chantisnake/anaconda_choco/master/logo-anaconda.png</iconUrl>
+    <iconUrl>https://github.com/chantisnake/chocolateyPackage/raw/master/anaconda-choco/logo-anaconda.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
