@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://github.com/soimort/you-get/wiki</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/soimort/you-get/issues</bugTrackerUrl>
-    <tags>you-get admin video-downloader</tags>
+    <tags>you-get video-downloader</tags>
     <summary> Dumb downloader that scrapes the web https://you-get.org/ </summary>
     <description>[You-Get](https://you-get.org/) is a tiny command-line utility to download media contents (videos, audios, images) from the Web, in case there is no other handy way to do it.
 
