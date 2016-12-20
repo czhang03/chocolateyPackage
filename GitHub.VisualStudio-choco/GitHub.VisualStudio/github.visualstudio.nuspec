@@ -38,13 +38,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>GitHub</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://visualstudio.github.com/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/github.visualstudio.png</iconUrl>-->-->
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/github.visualstudio.png</iconUrl>-->
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://github.com/github/VisualStudio/blob/master/LICENSE.md</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <projectSourceUrl>https://github.com/github/VisualStudio</projectSourceUrl>-->
-    <docsUrl>https://github.com/github/VisualStudio/wiki</docsUrl>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/github/VisualStudio</projectSourceUrl>
+    <docsUrl>https://github.com/github/VisualStudio/wiki</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/github/VisualStudio/issues</bugTrackerUrl>
     <tags>github visualstudio</tags>
