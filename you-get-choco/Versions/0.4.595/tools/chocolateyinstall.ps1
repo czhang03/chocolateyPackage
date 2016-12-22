@@ -1,1 +1,3 @@
-﻿Install-ChocolateyZipPackage -packageName 'you-get' -UnzipLocation $(Split-Path -Parent $MyInvocation.MyCommand.Definition) -Url 'https://github.com/soimort/you-get/releases/download/v0.4.595/you-get-0.4.595-win32-full.7z'-Checksum 'D22734D9955A08882B0AB7E9431708516F247F396E09E32306013586E0B28EED' -ChecksumType 'sha256'
+$ErrorActionPreference = 'stop'
+
+Get-ChocolateyWebFile -packageName 'you-get' -FileFullPath "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)\you-get.exe" -Url 'https://github.com/soimort/you-get/releases/download/v0.4.595/you-get-0.4.595-win32.exe' -checksum '0C849ADEAD615ABB299DD8BE9D8157D66CA309C4BD75A09AC4EEC3675A90EED1' -checksumType 'sha256'
