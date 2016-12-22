@@ -34,7 +34,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>bitdiff</title>
+    <title>bitdiffer</title>
     <authors>bitdiffer</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/bitdiffer/bitdiffer</projectUrl>
@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://github.com/bitdiffer/bitdiffer/wiki</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/bitdiffer/bitdiffer/issues</bugTrackerUrl>
-    <tags>bitdiff admin</tags>
+    <tags>bitdiffer dotnet</tags>
     <summary>Assembly file comparison tool for .NET </summary>
     <description>
 BitDiffer is a GUI and Command Line application to compare versions of .NET assemblies.
