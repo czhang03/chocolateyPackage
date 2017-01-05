@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://hyper.is/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/zeit/hyper/issues</bugTrackerUrl>
-    <tags>hyper console terminal</tags>
+    <tags>hyper admin console terminal</tags>
     <summary>A terminal built on web technologies https://hyper.is </summary>
     <description>
 ## Project goals
