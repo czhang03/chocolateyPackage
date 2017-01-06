@@ -22,37 +22,39 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>rocketchat</id>
+    <id>simplednscrpt</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.0.0</version>
-    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage/tree/master/rocketchatelectron-choco</packageSourceUrl>
+    <version></version>
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <owners>Chantisnake</owners>
+    <owners>chantisnake</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>rocket chat</title>
-    <authors>RocketChat</authors>
+    <title>Simple DNSCrypt</title>
+    <authors>bitbeans</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://github.com/RocketChat/Rocket.Chat.Electron</projectUrl>
-    <iconUrl>https://github.com/chantisnake/chocolateyPackage/raw/master/rocketchatelectron-choco/1024x1024-circle.png</iconUrl>
+    <projectUrl>https://simplednscrypt.org/</projectUrl>
+    <iconUrl>https://github.com/bitbeans/SimpleDnsCrypt/raw/master/img/icons/256x256.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <projectSourceUrl>https://github.com/RocketChat/Rocket.Chat.Electron</projectSourceUrl>
-    <docsUrl>https://rocket.chat/docs/</docsUrl>
-    <mailingListUrl>https://rocket.chat/contact</mailingListUrl>
-    <bugTrackerUrl>https://github.com/RocketChat/Rocket.Chat.Electron/issues</bugTrackerUrl>
-    <tags>rocket.chat admin chat IM</tags>
-    <summary>Official OSX, Windows, and Linux Desktop Clients for Rocket.Chat https://rocket.chat/ </summary>
+    <licenseUrl>https://github.com/bitbeans/SimpleDnsCrypt/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/bitbeans/SimpleDnsCrypt</projectSourceUrl>
+    <docsUrl>https://github.com/bitbeans/SimpleDnsCrypt/wiki</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/bitbeans/SimpleDnsCrypt/issues</bugTrackerUrl>
+    <tags>simplednscrpt admin proxy network</tags>
+    <summary>A simple management tool for dnscrypt-proxy https://simplednscrypt.org </summary>
     <description>
-Rocket.Chat is an incredible product because we have an incredible developer community. 
-Over 200 contributors have made our platform a dynamic and innovative toolkit, from group messages and video calls to helpdesk killer features. 
-Our contributors are the reason we're the best cross-platform open source chat solution available today.
+[![license](https://img.shields.io/github/license/bitbeans/SimpleDnsCrypt.svg?style=flat-square)](https://github.com/bitbeans/SimpleDnsCrypt/blob/master/LICENSE.md) [![Github All Releases](https://img.shields.io/github/release/bitbeans/SimpleDnsCrypt.svg?style=flat-square)](https://github.com/bitbeans/SimpleDnsCrypt/releases/latest) [![Github All Releases](https://img.shields.io/github/downloads/bitbeans/SimpleDnsCrypt/total.svg?style=flat-square)](https://github.com/bitbeans/SimpleDnsCrypt/releases/latest) [![donate PayPal](https://img.shields.io/badge/donate-PayPal-green.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=c.hermann@bitbeans.de&amp;item_name=Donation+to+the+Simple+DNSCrypt+project) [![donate pledgie](https://img.shields.io/badge/donate-pledgie-green.svg?style=flat-square)](https://pledgie.com/campaigns/32588)
+
+
+    Simple DNSCrypt is a simple management tool to configure dnscrypt-proxy on windows based systems.
+If you are looking for an only command line tool, you can use the dnscrypt-proxy software. There are pre-compiled versions for any os. The dnscrypt-proxy software is written and maintained by Frank Denis (@jedisct1).
     </description>
     <releaseNotes></releaseNotes>
     <!-- =============================== -->      
