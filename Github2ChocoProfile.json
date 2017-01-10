@@ -64,8 +64,8 @@
                   },
     "simplednscrpt":  {
                           "Regex32bit":  "SimpleDNSCrypt.msi",
-                          "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrpt-choco",
-                          "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrpt-choco\\simplednscrpt",
+                          "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
+                          "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
                           "version":  "0.4.0",
                           "githubRepo":  "bitbeans/SimpleDnsCrypt",
                           "installerType":  "msi",
