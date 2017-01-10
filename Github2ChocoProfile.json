@@ -1,0 +1,75 @@
+﻿{
+    "you-get":  {
+                    "Regex32bit":  "you-get-*-win32.exe",
+                    "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\you-get-choco",
+                    "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\you-get-choco\\you-get",
+                    "version":  "0.4.595",
+                    "githubRepo":  "soimort/you-get",
+                    "packageType":  "webFile"
+                },
+    "shadowsocks":  {
+                        "Regex32bit":  "Shadowsocks-*.zip",
+                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco",
+                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco\\shadowsocks",
+                        "version":  "3.4.2.1",
+                        "githubRepo":  "shadowsocks/shadowsocks-windows",
+                        "packageType":  "zip",
+                        "sourceCode":  false
+                    },
+    "rocketchat":  {
+                       "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
+                       "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
+                       "version":  "2.0.2",
+                       "Regex64Bit":  "rocketchat-*-win32-x64.exe",
+                       "githubRepo":  "RocketChat/Rocket.Chat.Electron",
+                       "installerType":  "exe",
+                       "scilentArg":  "/S",
+                       "packageType":  "installer"
+                   },
+    "hyper":  {
+                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco",
+                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco\\hyper",
+                  "version":  "1.0.1",
+                  "Regex64Bit":  "hyper-Setup-*-win.exe",
+                  "githubRepo":  "zeit/hyper",
+                  "installerType":  "exe",
+                  "scilentArg":  "--silent",
+                  "packageType":  "installer"
+              },
+    "visualstudio-github":  {
+                                "Regex32bit":  "GitHub.VisualStudio.vsix",
+                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco",
+                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco\\visualstudio-github",
+                                "version":  "2.1.1.4",
+                                "githubRepo":  "github/VisualStudio",
+                                "packageType":  "vsix"
+                            },
+    "spek":  {
+                 "Regex32bit":  "spek-*.msi",
+                 "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\spek-choco",
+                 "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\spek-choco\\spek",
+                 "version":  "",
+                 "githubRepo":  "alexkay/spek",
+                 "installerType":  "msi",
+                 "scilentArg":  "/quiet",
+                 "packageType":  "installer"
+             },
+    "bitdiffer":  {
+                      "Regex32bit":  "BitDiffer*.zip",
+                      "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\bitdiffer-choco",
+                      "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\bitdiffer-choco\\bitdiffer",
+                      "version":  "1_5_0_4",
+                      "githubRepo":  "bitdiffer/bitdiffer",
+                      "PackageType":  "zip"
+                  },
+    "simplednscrpt":  {
+                          "Regex32bit":  "SimpleDNSCrypt.msi",
+                          "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrpt-choco",
+                          "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrpt-choco\\simplednscrpt",
+                          "version":  "0.4.0",
+                          "githubRepo":  "bitbeans/SimpleDnsCrypt",
+                          "installerType":  "msi",
+                          "scilentArg":  "/quiet",
+                          "packageType":  "installer"
+                      }
+}
