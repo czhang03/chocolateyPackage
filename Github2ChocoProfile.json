@@ -11,7 +11,7 @@
                         "Regex32bit":  "Shadowsocks-*.zip",
                         "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco",
                         "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco\\shadowsocks",
-                        "version":  "3.4.2.1",
+                        "version":  "3.4.3",
                         "githubRepo":  "shadowsocks/shadowsocks-windows",
                         "packageType":  "zip",
                         "sourceCode":  false
