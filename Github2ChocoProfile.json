@@ -23,7 +23,7 @@
                        "Regex64Bit":  "rocketchat-*-win32-x64.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
-                       "scilentArg":  "/S",
+                       "silentArg":  "/S",
                        "packageType":  "installer"
                    },
     "hyper":  {
@@ -33,7 +33,7 @@
                   "Regex64Bit":  "hyper-Setup-*-win.exe",
                   "githubRepo":  "zeit/hyper",
                   "installerType":  "exe",
-                  "scilentArg":  "--silent",
+                  "silentArg":  "--silent",
                   "packageType":  "installer"
               },
     "visualstudio-github":  {
@@ -51,7 +51,7 @@
                  "version":  "",
                  "githubRepo":  "alexkay/spek",
                  "installerType":  "msi",
-                 "scilentArg":  "/quiet",
+                 "silentArg":  "/quiet",
                  "packageType":  "installer"
              },
     "bitdiffer":  {
@@ -69,7 +69,7 @@
                           "version":  "0.4.0",
                           "githubRepo":  "bitbeans/SimpleDnsCrypt",
                           "installerType":  "msi",
-                          "scilentArg":  "/quiet",
+                          "silentArg":  "/quiet",
                           "packageType":  "installer"
                       },
     "i2pd":  {
@@ -85,8 +85,10 @@
                                                "version":  "1.8.0",
                                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco",
                                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco\\template",
-                                               "Regex32bit":  "gcmw-*.zip",
+                                               "Regex32bit":  "GCMW-*.exe",
                                                "githubRepo":  "Microsoft/Git-Credential-Manager-for-Windows",
-                                               "packageType":  "zip"
+                                               "packageType":  "installer",
+                                               "installerType":  "exe",
+                                               "silentArg":  "/SILENT /NORESTART"
                                            }
 }
