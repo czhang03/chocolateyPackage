@@ -34,7 +34,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>PurpleI2P</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/PurpleI2P/i2pd</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/i2pd.png</iconUrl>-->
+    <iconUrl>http://i2pd.website/images/favicon.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>i2pd admin SPACE_SEPARATED</tags>
+    <tags>i2pd admin network encryption</tags>
     <summary>Full C++ implementation of I2P client</summary>
     <description>i2pd
 ====
