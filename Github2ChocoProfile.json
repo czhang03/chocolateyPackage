@@ -90,5 +90,14 @@
                                                "packageType":  "installer",
                                                "installerType":  "exe",
                                                "silentArg":  "/SILENT /NORESTART"
-                                           }
+                                           },
+    "hugo":  {
+                 "version":  "",
+                 "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hugo-choco",
+                 "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hugo-choco\\template",
+                 "Regex64bit":  "hugo_*_Windows-64bit.zip",
+                 "Regex32bit":  "hugo_*_Windows-32bit.zip",
+                 "githubRepo":  "spf13/hugo",
+                 "packageType":  "zip"
+             }
 }
