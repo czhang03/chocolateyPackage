@@ -1,0 +1,2 @@
+﻿$ErrorActionPreference = 'Stop'; # stop on all errors
+Install-ChocolateyZipPackage -packageName 'hugo' -UnzipLocation $(Split-Path -Parent $MyInvocation.MyCommand.Definition) -Url 'https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Windows-32bit.zip' -checksum '2703AC22F0421031D2008F1CF85836280E2E5FA01A41EFB06E72B202F8F4AC5F' -checksumType 'sha256'-Url64 'https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Windows-64bit.zip' -checksum64 '8269B0FBD54A8548692FE994625ED99BADA53807D172F29F00B8C66BE676A922' -checksumType64 'sha256'
