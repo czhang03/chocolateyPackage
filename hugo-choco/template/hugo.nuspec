@@ -34,8 +34,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>hugo</title>
     <authors>spf13</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://github.com/spf13/hugo</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/hugo.png</iconUrl>-->
+    <projectUrl>http://gohugo.io/</projectUrl>
+    <iconUrl>https://github.com/spf13/hugo/raw/master/docs/static/img/hugo-logo-med.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>hugo admin SPACE_SEPARATED</tags>
+    <tags>hugo admin blog website network</tags>
     <summary>A Fast and Flexible Static Site Generator built with love in GoLang</summary>
     <description>![Hugo](https://raw.githubusercontent.com/spf13/hugo/master/docs/static/img/hugo-logo.png)
 
