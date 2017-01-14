@@ -101,7 +101,7 @@
                  "packageType":  "zip"
              },
     "dnSpy":  {
-                  "version":  "",
+                  "version":  "3.0.0",
                   "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco",
                   "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco\\template",
                   "Regex32bit":  "dnSpy.zip",
