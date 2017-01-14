@@ -37,8 +37,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/dnspy.png</iconUrl>-->
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <licenseUrl>https://github.com/0xd4d/dnSpy/blob/master/dnSpy/dnSpy/LicenseInfo/GPLv3.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
@@ -93,7 +93,6 @@ If you send a PR, try to use the same coding style as the current project you're
     <bugTrackerUrl>https://github.com/0xd4d/dnSpy/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage</packageSourceUrl>
     <owners>chantisnake</owners>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/0xd4d/dnSpy</projectSourceUrl>
     <docsUrl>https://github.com/0xd4d/dnSpy/wikis</docsUrl>
     <releaseNotes>See the [Wiki](https://github.com/0xd4d/dnSpy/wiki/Building-dnSpy) on how to build from source. It's recommended if your antivirus (eg. Kaspersky) reports [false positives](http://www.howtogeek.com/180162/how-to-tell-if-a-virus-is-actually-a-false-positive/).</releaseNotes>
