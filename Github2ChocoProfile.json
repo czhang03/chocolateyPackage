@@ -99,5 +99,13 @@
                  "Regex32bit":  "hugo_*_Windows-32bit.zip",
                  "githubRepo":  "spf13/hugo",
                  "packageType":  "zip"
-             }
+             },
+    "dnSpy":  {
+                  "version":  "",
+                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco",
+                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco\\template",
+                  "Regex32bit":  "dnSpy.zip",
+                  "githubRepo":  "0xd4d/dnSpy",
+                  "packageType":  "zip"
+              }
 }
