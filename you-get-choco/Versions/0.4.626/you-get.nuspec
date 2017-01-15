@@ -92,7 +92,6 @@ $ pip3 install --upgrade you-get
     <dependencies>
       <dependency id="python3" />
       <dependency id="ffmpeg" />
-      <dependency id="rtmpdump" />
     </dependencies>
     <!-- chocolatey-uninstall.extension - If supporting 0.9.9.x (or below) and including a chocolateyUninstall.ps1 file to uninstall an EXE/MSI, you probably want to include chocolatey-uninstall.extension as a dependency. Please verify whether you are using a helper function from that package. -->
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
