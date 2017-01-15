@@ -34,7 +34,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>soimort</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/soimort/you-get</projectUrl>
-    <iconUrl>https://github.com/chantisnake/chocolateyPackage/raw/master/you-get-choco/Button_circle_download_128px_1198020_easyicon.net.png</iconUrl>
+    <iconUrl>https://you-get.org/images/logo.jpg</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://github.com/soimort/you-get/blob/develop/LICENSE.txt</licenseUrl>
