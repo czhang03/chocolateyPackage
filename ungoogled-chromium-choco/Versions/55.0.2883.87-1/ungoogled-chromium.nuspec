@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces 
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements 
+-->
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>ungoogled-chromium</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>55.0.2883.87-1</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
+    <!-- ============================== -->
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>ungoogled-chromium</title>
+    <authors>Eloston</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://github.com/Eloston/ungoogled-chromium</projectUrl>
+    <iconUrl>https://www.chromium.org/config/customLogo.gif</iconUrl>
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>ungoogled-chromium chromium chrome google browser web</tags>
+    <summary>Modifications to Google Chromium for removing Google integration and enhancing privacy, control, and transparency</summary>
+    <description>
+
+A number of features or background services communicate with Google servers despite the absence of an associated Google account or compiled-in Google API keys. Furthermore, the normal build process for Chromium involves running Google's own high-level commands that invoke many scripts and utilities, some of which download and use pre-built binaries provided by Google. Even the final build output includes some pre-built binaries. Fortunately, the source code is available for everything.
+
+ungoogled-chromium is a set of configuration flags, patches, and custom scripts. These components altogether strive to accomplish the following:
+* Disable or remove offending services and features that communicate with Google or weaken privacy
+* Strip binaries from the source tree, and use those provided by the system or build them from source
+* Add, modify, or disable features that inhibit control and transparency (these changes are minor and do not have significant impacts on the general user experience)
+
+**ungoogled-chromium is looking for contributors**. See the Contributing, Reporting, Contacting section for more information.
+
+## Building
+
+[See BUILDING.md](BUILDING.md)
+
+## Contributing, Reporting, Contacting
+
+Use the [Issue Tracker](//github.com/Eloston/ungoogled-chromium/issues) for problems, suggestions, and questions. There is also a [Gitter chat room](https://gitter.im/ungoogled-software/Lobby) that serves the same purpose.
+
+Contributors are welcome!
+
+If you are interested in making a change, I, Eloston, encourage you to submit a pull request. Please read the Pull requests section below for submission guidelines.
+* Additionally, issues marked with the `help wanted` tag are changes I need others to help with. Please read the issue's comment thread for more details on what needs to be done.
+
+### Pull requests
+
+Pull requests are also welcome. Here are some guidelines:
+* Changes that fix certain configurations or add small features and do not break compatibility are generally okay
+* Larger changes, such as those that change `buildlib`, should be proposed through an issue first before submitting a pull request.
+* When in doubt, propose the idea through an issue first.
+
+## Credits
+
+[Iridium Browser](//iridiumbrowser.de/)
+
+[Inox patchset](//github.com/gcarq/inox-patchset)
+
+[Debian](//tracker.debian.org/pkg/chromium-browser)
+
+[The Chromium Project](//www.chromium.org/)
+
+</description>
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <!-- =============================== -->
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-uninstall.extension" />
+    </dependencies>-->
+    <!-- chocolatey-uninstall.extension - If supporting 0.9.9.x (or below) and including a chocolateyUninstall.ps1 file to uninstall an EXE/MSI, you probably want to include chocolatey-uninstall.extension as a dependency. Please verify whether you are using a helper function from that package. -->
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+    <bugTrackerUrl>https://github.com/Eloston/ungoogled-chromium/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage</packageSourceUrl>
+    <owners>chantisnake</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Eloston/ungoogled-chromium</projectSourceUrl>
+    <docsUrl>https://github.com/Eloston/ungoogled-chromium/wikis</docsUrl>
+    <licenseUrl>https://github.com/Eloston/ungoogled-chromium/blob/master/LICENSE</licenseUrl>
+    <releaseNotes>What's new since 55.0.2883.75-1:
+* Fix Windows support
+* Fix macOS Widevine support
+* Fix Linux static build
+* Minor tweaks and changes to buildlib and patches
+
+The following binaries are built by @Eloston. For binaries on other systems, see [this page](https://ungoogled-software.github.io/ungoogled-chromium-binaries/).
+
+Download for **Debian 9.0 (stretch) amd64**:
+* [chromedriver_55.0.2883.87-1_amd64.deb](https://github.com/Eloston/ungoogled-chromium/releases/download/55.0.2883.87-1/chromedriver_55.0.2883.87-1_amd64.deb)
+    * SHA256: `1bb160480fdba3e42c63a5b36c349b44e661ea6d0298fce0b90b5c3de32f5916`
+    * SHA1: `aa12891398c260a2faa30bbb0c95101d1c6c8de4`
+    * MD5: `c2483541272b8d8292db36d26a347878`
+* [chrome-sandbox_55.0.2883.87-1_amd64.deb](https://github.com/Eloston/ungoogled-chromium/releases/download/55.0.2883.87-1/chrome-sandbox_55.0.2883.87-1_amd64.deb)
+    * SHA256: `1514717ba3676fb26cabf1dfd67bd895058f15ee337871823becea31c1ce8889`
+    * SHA1: `a96f33073d45dae57c147d68f84b1e6f76703e2c`
+    * MD5: `2b8c9d167e3f8a91a0ed15d0db3f5abb`
+* [chromium_55.0.2883.87-1_amd64.deb](https://github.com/Eloston/ungoogled-chromium/releases/download/55.0.2883.87-1/chromium_55.0.2883.87-1_amd64.deb)
+    * SHA256: `5c5b3e705d99b1bd8ddd00ed178f9301dbfdd56ec5def8fa6b717603904ea723`
+    * SHA1: `30763a4ffbba85afe13341c662d2e24694252917`
+    * MD5: `b18cc935258545c01bef73a638d41ac1`
+* [chromium-l10n_55.0.2883.87-1_all.deb](https://github.com/Eloston/ungoogled-chromium/releases/download/55.0.2883.87-1/chromium-l10n_55.0.2883.87-1_all.deb)
+    * SHA256: `f45ae22b2abae37ad6150f4a5e88a9715dbca52c2f9645768a0e9fa0b4501a77`
+    * SHA1: `98e05b331bbefdb871276b13111f21866ba92089`
+    * MD5: `c485437fbd532910ca1afb89415191b7`
+* [chromium-browser_55.0.2883.87-1_amd64.buildinfo](https://github.com/Eloston/ungoogled-chromium/releases/download/55.0.2883.87-1/chromium-browser_55.0.2883.87-1_amd64.buildinfo)
+    * SHA256: `eb2a38d2777f049a33586ff90230210d7c05839905248c623647c1c9f103653f`
+    * SHA1: `63ee43b825cab0afdc205d51cf3830e0204ec7be`
+    * MD5: `fdef5d5fc5f7296eefb1eff5609a9a29`
+* [chromium-browser_55.0.2883.87-1_amd64.changes](https://github.com/Eloston/ungoogled-chromium/releases/download/55.0.2883.87-1/chromium-browser_55.0.2883.87-1_amd64.changes)
+    * SHA256: `db677b498dde2cacd3da4bb4873752d2e2334e6ec97eeac4ed99f0d3c935d779`
+    * SHA1: `151b81990d073650923a35ee9e92c1e43e941351`
+    * MD5: `0597c20cfe795fbf7001d19708c34c13`
+
+Download for **Windows 32-bit**:
+* [ungoogled-chromium_55.0.2883.87-1_windows_x86.zip](https://github.com/Eloston/ungoogled-chromium/releases/download/55.0.2883.87-1/ungoogled-chromium_55.0.2883.87-1_windows_x86.zip)
+    * SHA256: `38eef153c7a34d8e858859f159bcccb3745ebe99428b00464a7e32426e50cd53`
+    * SHA1: `e63b16df366312b4257a9660d867368b2e6a0a3b`
+    * MD5: `1ca5619f7f0c65ae21c329b27006a7f6`
+
+Download for **Windows 64-bit**:
+* [ungoogled-chromium_55.0.2883.87-1_windows_x64.zip](https://github.com/Eloston/ungoogled-chromium/releases/download/55.0.2883.87-1/ungoogled-chromium_55.0.2883.87-1_windows_x64.zip)
+    * SHA256: `0b748947a56f814055f678c4be1e375a5fe614b17abae91b3d2ba49a5e20b4cd`
+    * SHA1: `50adf61c36973d35957d5ac5f833d439b4bf7657`
+    * MD5: `5a0c046cd411d769fb49104a086a45e1`</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
