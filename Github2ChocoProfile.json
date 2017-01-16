@@ -118,7 +118,7 @@
                                "packageType":  "zip"
                            },
     "rssguard":  {
-                     "version":  "",
+                     "version":  "3.3.5",
                      "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco",
                      "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco\\template",
                      "Regex32bit":  "rssguard-[^-]*-[^-]*-win32.7z",
