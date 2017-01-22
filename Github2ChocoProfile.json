@@ -62,7 +62,7 @@
                       "githubRepo":  "bitdiffer/bitdiffer",
                       "PackageType":  "zip"
                   },
-    "simplednscrpt":  {
+    "simplednscrypt":  {
                           "Regex32bit":  "SimpleDNSCrypt.msi",
                           "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
                           "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
