@@ -19,7 +19,7 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.2.0",
+                       "version":  "2.2.3",
                        "Regex32Bit":  "rocketchat-Setup-.*.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
@@ -40,7 +40,7 @@
                                 "Regex32bit":  "GitHub.VisualStudio.vsix",
                                 "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco",
                                 "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco\\visualstudio-github",
-                                "version":  "2.1.1.4",
+                                "version":  "2.2.0.4",
                                 "githubRepo":  "github/VisualStudio",
                                 "packageType":  "vsix"
                             },
@@ -66,7 +66,7 @@
                           "Regex32bit":  "SimpleDNSCrypt.msi",
                           "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
                           "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
-                          "version":  "0.4.0",
+                          "version":  "0.4.1",
                           "githubRepo":  "bitbeans/SimpleDnsCrypt",
                           "installerType":  "msi",
                           "silentArg":  "/quiet",
@@ -112,8 +112,8 @@
                                "version":  "55.0.2883.87-1",
                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\ungoogled-chromium-choco",
                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\ungoogled-chromium-choco\\template",
-                               "Regex64bit":  "ungoogled-chromium_.*_windows_x86.zip",
-                               "Regex32bit":  "ungoogled-chromium_.*_windows_x64.zip",
+                               "Regex64bit":  "ungoogled-chromium_.*_windows_x64.zip",
+                               "Regex32bit":  "ungoogled-chromium_.*_windows_x86.zip",
                                "githubRepo":  "Eloston/ungoogled-chromium",
                                "packageType":  "zip"
                            },
