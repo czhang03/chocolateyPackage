@@ -31,7 +31,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- ============================== -->
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>i2pd</title>
+    <title>I2P Daemon</title>
     <authors>PurpleI2P</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/PurpleI2P/i2pd</projectUrl>
