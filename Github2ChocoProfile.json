@@ -19,7 +19,7 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.2.3",
+                       "version":  "2.3.0",
                        "Regex32Bit":  "rocketchat-Setup-.*.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
@@ -37,10 +37,10 @@
                   "packageType":  "installer"
               },
     "visualstudio-github":  {
-                                "Regex32bit":  "GitHub.VisualStudio.vsix",
+                                "Regex32bit":  "GitHub\\.VisualStudio\\.vsix$",
                                 "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco",
                                 "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco\\visualstudio-github",
-                                "version":  "2.2.0.4",
+                                "version":  "2.2.0.5",
                                 "githubRepo":  "github/VisualStudio",
                                 "packageType":  "vsix"
                             },
@@ -63,13 +63,13 @@
                       "PackageType":  "zip"
                   },
     "simplednscrypt":  {
-                          "Regex32bit":  "SimpleDNSCrypt_.*\\.zip",
-                          "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
-                          "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
-                          "version":  "0.4.1",
-                          "githubRepo":  "bitbeans/SimpleDnsCrypt",
-                          "packageType":  "zip"
-                      },
+                           "Regex32bit":  "SimpleDNSCrypt_.*\\.zip",
+                           "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
+                           "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
+                           "version":  "0.4.1",
+                           "githubRepo":  "bitbeans/SimpleDnsCrypt",
+                           "packageType":  "zip"
+                       },
     "i2pd":  {
                  "version":  "2.11.0",
                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco",
@@ -116,7 +116,7 @@
                                "packageType":  "zip"
                            },
     "rssguard":  {
-                     "version":  "3.3.5",
+                     "version":  "3.3.7",
                      "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco",
                      "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco\\template",
                      "Regex32bit":  "rssguard-[^-]*-[^-]*-win32.7z",
