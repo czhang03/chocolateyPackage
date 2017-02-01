@@ -40,7 +40,7 @@
                                 "Regex32bit":  "GitHub\\.VisualStudio\\.vsix$",
                                 "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco",
                                 "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco\\visualstudio-github",
-                                "version":  "2.2.0.5",
+                                "version":  "2.2.0.6",
                                 "githubRepo":  "github/VisualStudio",
                                 "packageType":  "vsix"
                             },
