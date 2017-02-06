@@ -15,14 +15,14 @@
           1. will not add anaconda python to path,
           2. will register anaconda python at defualt python2
           3. will install for all user
-          4. will install in your `$ToolsDir\Anaconda2` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) defualt is `C:\Tools\Anaconda2`
+          4. will install in your `$ToolsDir\Anaconda2` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) default is `C:\Tools\Anaconda3`
     </description>
     <projectUrl>https://www.continuum.io/why-anaconda</projectUrl>
-    <packageSourceUrl>https://github.com/chantisnake/anaconda_choco/tree/master/anaconda2</packageSourceUrl>
-    <!--<projectSourceUrl></projectSourceUrl>
-    <docsUrl></docsUrl>
-    <mailingListUrl></mailingListUrl>
-    <bugTrackerUrl></bugTrackerUrl>-->
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage/tree/master/anaconda-choco/anaconda3</packageSourceUrl>
+    <!--<projectSourceUrl></projectSourceUrl>-->
+    <docsUrl>https://docs.continuum.io/anaconda/</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/continuumio/anaconda-issues</bugTrackerUrl>
     <tags>anaconda2 admin python</tags>
     <copyright></copyright>
     <licenseUrl>https://docs.continuum.io/anaconda/eula</licenseUrl>
