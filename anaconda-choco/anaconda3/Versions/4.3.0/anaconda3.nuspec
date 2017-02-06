@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>anaconda3</id>
+    <title>anaconda3</title>
+    <version>4.3.0</version>
+    <authors>Continuum</authors>
+    <owners>Chantisnake</owners>
+    <summary> a python distribution created by continuum</summary>
+    <description> 
+        a python distribution created by continuum
+        this installation:
+          1. will not add anaconda python to path,
+          2. will register anaconda python at defualt python3
+          3. will install for all user
+          4. will install in your `$ToolsDir\Anaconda3` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) defualt is `C:\Tools\Anaconda3`
+    </description>
+    <projectUrl>https://www.continuum.io/why-anaconda</projectUrl>
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage/tree/master/anaconda-choco/anaconda3</packageSourceUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>anaconda2 admin python</tags>
+    <copyright></copyright>
+    <licenseUrl>https://docs.continuum.io/anaconda/eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/chantisnake/chocolateyPackage/raw/master/anaconda-choco/logo-anaconda.png</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+  </files>
+</package>
