@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>i2pd admin network encryption</tags>
+    <tags>i2pd network encryption</tags>
     <summary>Full C++ implementation of I2P client</summary>
     <description>i2pd
 ====
