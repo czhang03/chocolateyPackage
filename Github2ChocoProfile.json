@@ -29,8 +29,8 @@
     "hyper":  {
                   "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco",
                   "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco\\hyper",
-                  "version":  "1.1.0",
-                  "Regex64Bit":  "hyper-Setup-.*-win.exe",
+                  "version":  "1.2.1",
+                  "Regex64Bit":  "hyper-Setup-.*.exe",
                   "githubRepo":  "zeit/hyper",
                   "installerType":  "exe",
                   "silentArg":  "--silent",
