@@ -90,7 +90,7 @@
                                                "silentArg":  "/SILENT /NORESTART"
                                            },
     "hugo":  {
-                 "version":  "0.18.1",
+                 "version":  "0.19",
                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hugo-choco",
                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hugo-choco\\template",
                  "Regex64bit":  "hugo_.*_Windows-64bit.zip",

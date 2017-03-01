@@ -23,8 +23,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>
-    </version>
+    <version>0.19</version>
     <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
@@ -46,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>hugo admin blog website network</tags>
     <summary>A Fast and Flexible Static Site Generator built with love in GoLang</summary>
-    <description >![Hugo](https://raw.githubusercontent.com/spf13/hugo/master/docs/static/img/hugo-logo.png)
+    <description>![Hugo](https://raw.githubusercontent.com/spf13/hugo/master/docs/static/img/hugo-logo.png)
 
 A Fast and Flexible Static Site Generator built with love by [spf13](http://spf13.com/) and [friends](https://github.com/spf13/hugo/graphs/contributors) in [Go](https://golang.org/).
 
@@ -103,7 +102,7 @@ When reporting the issue, please provide the version of Hugo in use (`hugo versi
 [![Analytics](https://ga-beacon.appspot.com/UA-7131036-6/hugo/readme)](https://github.com/igrigorik/ga-beacon)
 
 </description>
-   <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <!--<dependencies>
@@ -120,8 +119,78 @@ When reporting the issue, please provide the version of Hugo in use (`hugo versi
     <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
     <owners>chantisnake</owners>
     <docsUrl>https://github.com/spf13/hugo/wikis</docsUrl>
-    <releaseNotes>
-    </releaseNotes>
+    <releaseNotes># **0.19** February 27th 2017
+
+We’re happy to announce the first release of Hugo in 2017.
+
+This release represents **over 180 contributions by over 50 contributors** to the main Hugo code base. Since last release Hugo has **gained 1450 stars, 35 new contributors and 15 additional themes.**
+
+Hugo now has:
+
+*   15200+ stars
+*   470+ contributors
+*   151+ themes
+
+Furthermore, Hugo has its own Twitter account ([@gohugoio](https://twitter.com/gohugoio)) where we share bite-sized news and themes from the Hugo community.
+
+[@bep](//github.com/bep) leads the Hugo development and once again contributed a significant amount of additions. Also a big shoutout to [@chaseadamsio](//github.com/chaseadamsio) for the Emacs Org-mode support, [@digitalcraftsman](//github.com/digitalcraftsman) for his relentless work on keeping the documentation and the themes site in pristine condition, [@fj](//github.com/fj) for his work on revising the `params` handling in Hugo, and [@moorereason](//github.com/moorereason) and [@bogem](//github.com/bogem) for their ongoing contributions.
+
+## Highlights
+
+Hugo `0.19` brings native Emacs Org-mode content support ( [#1483](//github.com/spf13/hugo/issues/1483) ), big thanks to [@chaseadamsio](//github.com/chaseadamsio).
+
+Also, a considerably amount of work have been put into cleaning up the Hugo source code, in an issue titled [Refactor the globals out of site build](https://github.com/spf13/hugo/issues/2701). This is not immediately visible to the Hugo end user, but will speed up future development.
+
+Hugo `0.18` was bringing full-parallel page rendering, so workarounds depending on rendering order did not work anymore, and pages with duplicate target paths (common examples would be `/index.md` or `/about/index.md`) would now conflict with the home page or the section listing.
+
+With Hugo `0.19`, you can control this behaviour by turning off page types you do not want ( [#2534](//github.com/spf13/hugo/issues/2534) ). In its most extreme case, if you put the below setting in your `config.toml`, you will get **nothing!**:
+
+    disableKinds = ["page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+## Other New Features
+
+*   Add ability to sort pages by frontmatter parameters, enabling easy custom “top 10” page lists. [#3022](//github.com/spf13/hugo/issues/3022)
+*   Add `truncate` template function [#2882](//github.com/spf13/hugo/issues/2882)
+*   Add `now` function, which replaces the now deprecated `.Now` [#2882](//github.com/spf13/hugo/issues/2882)
+*   Make RSS item limit configurable [#3035](//github.com/spf13/hugo/issues/3035)
+
+## Enhancements
+
+*   Enhance `.Param` to permit arbitrarily nested parameter references [#2598](//github.com/spf13/hugo/issues/2598)
+*   Use `Page.Params` more consistently when adding metadata [#3033](//github.com/spf13/hugo/issues/3033)
+*   The `sectionPagesMenu` feature (“Section menu for the lazy blogger”) is now integrated with the section content pages. [#2974](//github.com/spf13/hugo/issues/2974)
+*   Hugo `0.19` is compiled with Go 1.8!
+*   Make template funcs like `findRE` and friends more liberal in what argument types they accept [#3018](//github.com/spf13/hugo/issues/3018) [#2822](//github.com/spf13/hugo/issues/2822)
+*   Improve generation of OpenGraph date tags [#2979](//github.com/spf13/hugo/issues/2979)
+
+## Notes
+
+*   `sourceRelativeLinks` is now deprecated and will be removed in Hugo `0.21` if no one is stepping up to the plate and fixes and maintains this feature. [#3028](//github.com/spf13/hugo/issues/3028)
+
+## Fixes
+
+*   Fix `.Site.LastChange` on sites where the default sort order is not chronological. [#2909](//github.com/spf13/hugo/issues/2909)
+*   Fix regression of `.Truncated` evaluation in manual summaries. [#2989](//github.com/spf13/hugo/issues/2989)
+*   Fix `preserveTaxonomyNames` regression [#3070](//github.com/spf13/hugo/issues/3070)
+*   Fix issue with taxonomies when only some have content page [#2992](//github.com/spf13/hugo/issues/2992)
+*   Fix instagram shortcode panic on invalid ID [#3048](//github.com/spf13/hugo/issues/3048)
+*   Fix subtle data race in `getJSON` [#3045](//github.com/spf13/hugo/issues/3045)
+*   Fix deadlock in cached partials [#2935](//github.com/spf13/hugo/issues/2935)
+*   Avoid double-encoding of paginator URLs [#2177](//github.com/spf13/hugo/issues/2177)
+*   Allow tilde in URLs [#2177](//github.com/spf13/hugo/issues/2177)
+*   Fix `.Site.Pages` handling on live reloads [#2869](//github.com/spf13/hugo/issues/2869)
+*   `UniqueID` now correctly uses the fill file path from the content root to calculate the hash, and is finally … unique!
+*   Discard current language based on `.Lang()`, go get translations correct for paginated pages. [#2972](//github.com/spf13/hugo/issues/2972)
+*   Fix infinite loop in template AST handling for recursive templates [#2927](//github.com/spf13/hugo/issues/2927)
+*   Fix issue with watching when config loading fails [#2603](//github.com/spf13/hugo/issues/2603)
+*   Correctly flush the imageConfig on live-reload [#3016](//github.com/spf13/hugo/issues/3016)
+*   Fix parsing of TOML arrays in frontmatter [#2752](//github.com/spf13/hugo/issues/2752)
+
+## Docs
+
+*   Add tutorial “How to use Google Firebase to host a Hugo site” [#3007](//github.com/spf13/hugo/issues/3007)
+*   Improve documentation for menu rendering [#3056](//github.com/spf13/hugo/issues/3056)
+*   Revise GitHub Pages deployment tutorial [#2930](//github.com/spf13/hugo/issues/2930)</releaseNotes>
     <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage</packageSourceUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://github.com/spf13/hugo/blob/master/LICENSE.md</licenseUrl>
