@@ -19,7 +19,7 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.4.0",
+                       "version":  "2.5.0",
                        "Regex32Bit":  "rocketchat-Setup-.*.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
@@ -40,7 +40,7 @@
                                 "Regex32bit":  "GitHub\\.VisualStudio\\.vsix$",
                                 "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco",
                                 "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco\\visualstudio-github",
-                                "version":  "2.2.0.7",
+                                "version":  "2.2.0.8",
                                 "githubRepo":  "github/VisualStudio",
                                 "packageType":  "vsix"
                             },
@@ -66,7 +66,7 @@
                            "Regex32bit":  "SimpleDNSCrypt_.*.zip$",
                            "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
                            "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
-                           "version":  "0.4.1",
+                           "version":  "0.4.2",
                            "githubRepo":  "bitbeans/SimpleDnsCrypt",
                            "packageType":  "zip"
                        },
