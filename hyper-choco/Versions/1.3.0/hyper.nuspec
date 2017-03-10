@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces 
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements 
+-->
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>hyper</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>1.3.0</version>
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage</packageSourceUrl>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>chantisnake</owners>
+    <!-- ============================== -->
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>hyper</title>
+    <authors>zeit</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://hyper.is/</projectUrl>
+    <iconUrl>https://github.com/chantisnake/chocolateyPackage/raw/master/hyper-choco/Hyper-Mark-120.png</iconUrl>
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <licenseUrl>https://github.com/zeit/hyper/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/zeit/hyper</projectSourceUrl>
+    <docsUrl>https://hyper.is/</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/zeit/hyper/issues</bugTrackerUrl>
+    <tags>hyper admin console terminal</tags>
+    <summary>A terminal built on web technologies https://hyper.is </summary>
+    <description>
+## Project goals
+The goal of the project is to create a beautiful and extensible experience for command-line interface users, built on open web standards.
+In the beginning, our focus will be primarily around speed, stability and the development of the correct API for extension authors.
+In the future, we anticipate the community will come up with innovative additions to enhance what could be the simplest, most powerful and well-tested interface for productivity.
+    </description>
+    <releaseNotes>Better perf, fewer bugs, unprecedented beauty
+
+## Improvements
+
+### Cursor blink support
+
+Set `cursorBlink: true` in `~/.hyper.js` to get this:
+
+![2017-03-09 11 51 38](https://cloud.githubusercontent.com/assets/13041/23767826/da3aa2e2-04be-11e7-846e-b2f4b0f6cf2e.gif)
+
+- Thanks @henrikdahl 0ee48c9841d700f35907f5ad59617f43f12dc6b4
+
+### Beautiful selection ranges
+
+We now synchronize the color of your caret with the selection range's styling. It's amazing
+
+![screen shot 2017-03-09 at 11 44 47 am](https://cloud.githubusercontent.com/assets/13041/23767575/def0daaa-04bd-11e7-9752-d818c9162f60.png)
+
+- Thanks @henrikdahl 600f815dffe6fd835dfef5e3fde568a09bd286db
+
+### Performance
+
+We are starting to roll out some nice performance improvements. This demo of rendering 3D objects using lots of (braille) characters now runs much more fluently on our testing device (Macbook 12)
+![2017-03-09 11 38 31](https://cloud.githubusercontent.com/assets/13041/23767421/555bf9be-04bd-11e7-8d95-2d24110e2a01.gif)
+
+- This is ongoing work. We have many more optimizations coming
+- Thanks @rauchg dc3b90028b4d476b6b6f888f7602920e2ec5db76 fe6e2977bda9f6320629d3fc4453f7f87ab398f0 9f9da68408ced9b4f0996401420eff51bccd29ca 95141ac5376a72d5900bbfaec6f26628a6240600
+
+### Better rendering of multiple tabs
+
+&lt;img src="https://cloud.githubusercontent.com/assets/13041/23768566/4db11fd8-04c1-11e7-980a-c093d4ec61ef.png" width="350" /&gt; &lt;img src="https://cloud.githubusercontent.com/assets/13041/23768565/4dafd858-04c1-11e7-8212-a48798a97f25.png" width="350" /&gt;
+
+&lt;img src="https://cloud.githubusercontent.com/assets/13041/23768567/4db2b4a6-04c1-11e7-8047-6f449a8cb3b7.png" width="350" /&gt; &lt;img src="https://cloud.githubusercontent.com/assets/13041/23768564/4dae8246-04c1-11e7-840d-0bb76f395bf0.png" width="350" /&gt;
+
+- Thanks @henrikdahl 78709d93cfb235f29cdd5d828f595796bad44410
+
+## UI font family is now configurable
+
+Via the `uiFontFamily` setting. Allows you to create themes like this:
+
+&lt;img src="https://cloud.githubusercontent.com/assets/13041/23768953/8fb5f43e-04c2-11e7-8159-6c7736b3fe88.png" width="500" /&gt;
+
+- wow
+- Thanks @henrikdahl ade9ad39fd1a79ac399abd1439ddce233bda103a
+
+## Improve CLI
+
+Adds support for `--help` and `--version`. One of many improvements to come to the `hyper` CLI!
+
+- Thanks @supersam654 edff890f5fcd4e975c42169153fe8c2be9039fd7
+
+## Bug fixes
+
+### Text flickering upon hover on certain platforms
+
+- Fixes #1490, #1575, #1579 (#1602)
+- Thanks @chabou 1f3ea081e8cbc97dff900cc0b9f9d588c44e13e8
+
+### Plugin Installation Error notification 
+
+An unfortunate alert that would show whenever you would launch Hyper is now gone. Sorry about that one.
+
+### Plugin installation on Windows
+
+We now correctly handling using the right sub-shell on `win32` to install plugins
+
+- Thanks @kwonoj 3df8274bf03fbfe75114781e160b33874cd73c3f
+
+### Plugin installation on Fish shell
+
+We now special case Fish to make it work
+
+- Thanks @henrikdahl 63ab33daa9d721cdc6e7bce630ede0e06da2b250
+
+### Fix config editing on Windows
+
+Bash on Windows now launches the correct program for editing the config
+
+- Thanks @stefanivic 36f96abb1d28ba85ebe678df2e87268b66aaf018
+
+### Fix bad state when closing a group of terms
+
+- Thanks @chabou 75b5eb7d3f29ece4872a0a4dd6c099f81907f88b
+
+## Meta improvements
+
+- Start to add some unit tests for low level functionality. Thanks @kandros 67d696329682daf359e02d1eac5bc2ccf7aaa660
+- Fix typo in default config @martinvd 7ae7a523d1cd2bd183ebe1ede3f420ad3db429e0
+- Bump electron @rauchg 12bda394beeda75b88f8f0eb69f5de0caa2b444f
+- Improve website and plugins documentation 
+  - @gsklee 717857ed6171a3f3edcfc6fcbd0cc267d023f65f
+  - @chabou 3fb2e04eae3409eadc03a0b42ac736265c2b7f2a
+- Improve default config with notes about where to find other tops @MatthiasWinkelmann fc829d23e8edb1160986d4eb51a9afda92403b94</releaseNotes>
+    <!-- =============================== -->
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-uninstall.extension" />
+    </dependencies>-->
+    <!-- chocolatey-uninstall.extension - If supporting 0.9.9.x (or below) and including a chocolateyUninstall.ps1 file to uninstall an EXE/MSI, you probably want to include chocolatey-uninstall.extension as a dependency. Please verify whether you are using a helper function from that package. -->
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
