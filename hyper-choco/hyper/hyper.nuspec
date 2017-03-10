@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://github.com/chantisnake/chocolateyPackage/raw/master/hyper-choco/Hyper-Mark-120.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
-    <licenseUrl>https://github.com/zeit/hyper/blob/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/zeit/hyper/blob/master/license.md</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/zeit/hyper</projectSourceUrl>
     <docsUrl>https://hyper.is/</docsUrl>
