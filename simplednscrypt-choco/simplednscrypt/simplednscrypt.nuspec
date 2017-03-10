@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://github.com/bitbeans/SimpleDnsCrypt/wiki</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/bitbeans/SimpleDnsCrypt/issues</bugTrackerUrl>
-    <tags>simplednscrpt admin proxy network</tags>
+    <tags>simplednscrpt proxy network</tags>
     <summary>A simple management tool for dnscrypt-proxy https://simplednscrypt.org </summary>
     <description>
 [![license](https://img.shields.io/github/license/bitbeans/SimpleDnsCrypt.svg?style=flat-square)](https://github.com/bitbeans/SimpleDnsCrypt/blob/master/LICENSE.md) [![Github All Releases](https://img.shields.io/github/release/bitbeans/SimpleDnsCrypt.svg?style=flat-square)](https://github.com/bitbeans/SimpleDnsCrypt/releases/latest) [![Github All Releases](https://img.shields.io/github/downloads/bitbeans/SimpleDnsCrypt/total.svg?style=flat-square)](https://github.com/bitbeans/SimpleDnsCrypt/releases/latest) [![donate PayPal](https://img.shields.io/badge/donate-PayPal-green.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=c.hermann@bitbeans.de&amp;item_name=Donation+to+the+Simple+DNSCrypt+project) [![donate pledgie](https://img.shields.io/badge/donate-pledgie-green.svg?style=flat-square)](https://pledgie.com/campaigns/32588)
