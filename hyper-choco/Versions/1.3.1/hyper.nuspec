@@ -23,7 +23,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>chantisnake</owners>
@@ -51,99 +51,16 @@ The goal of the project is to create a beautiful and extensible experience for c
 In the beginning, our focus will be primarily around speed, stability and the development of the correct API for extension authors.
 In the future, we anticipate the community will come up with innovative additions to enhance what could be the simplest, most powerful and well-tested interface for productivity.
     </description>
-    <releaseNotes>Better perf, fewer bugs, unprecedented beauty
+    <releaseNotes>Fix Powerline fonts and invalid config bug
 
-## Improvements
+### Patches
 
-### Cursor blink support
+- Fix echo issue in config pref: #1633
+- Revert "term: specify line-height in px": 237595cec83f1d3796e1f625bd8ca97a1cd1d443
 
-Set `cursorBlink: true` in `~/.hyper.js` to get this:
+### Credits
 
-![2017-03-09 11 51 38](https://cloud.githubusercontent.com/assets/13041/23767826/da3aa2e2-04be-11e7-846e-b2f4b0f6cf2e.gif)
-
-- Thanks @henrikdahl 0ee48c9841d700f35907f5ad59617f43f12dc6b4
-
-### Beautiful selection ranges
-
-We now synchronize the color of your caret with the selection range's styling. It's amazing
-
-![screen shot 2017-03-09 at 11 44 47 am](https://cloud.githubusercontent.com/assets/13041/23767575/def0daaa-04bd-11e7-9752-d818c9162f60.png)
-
-- Thanks @henrikdahl 600f815dffe6fd835dfef5e3fde568a09bd286db
-
-### Performance
-
-We are starting to roll out some nice performance improvements. This demo of rendering 3D objects using lots of (braille) characters now runs much more fluently on our testing device (Macbook 12)
-![2017-03-09 11 38 31](https://cloud.githubusercontent.com/assets/13041/23767421/555bf9be-04bd-11e7-8d95-2d24110e2a01.gif)
-
-- This is ongoing work. We have many more optimizations coming
-- Thanks @rauchg dc3b90028b4d476b6b6f888f7602920e2ec5db76 fe6e2977bda9f6320629d3fc4453f7f87ab398f0 9f9da68408ced9b4f0996401420eff51bccd29ca 95141ac5376a72d5900bbfaec6f26628a6240600
-
-### Better rendering of multiple tabs
-
-&lt;img src="https://cloud.githubusercontent.com/assets/13041/23768566/4db11fd8-04c1-11e7-980a-c093d4ec61ef.png" width="350" /&gt; &lt;img src="https://cloud.githubusercontent.com/assets/13041/23768565/4dafd858-04c1-11e7-8212-a48798a97f25.png" width="350" /&gt;
-
-&lt;img src="https://cloud.githubusercontent.com/assets/13041/23768567/4db2b4a6-04c1-11e7-8047-6f449a8cb3b7.png" width="350" /&gt; &lt;img src="https://cloud.githubusercontent.com/assets/13041/23768564/4dae8246-04c1-11e7-840d-0bb76f395bf0.png" width="350" /&gt;
-
-- Thanks @henrikdahl 78709d93cfb235f29cdd5d828f595796bad44410
-
-## UI font family is now configurable
-
-Via the `uiFontFamily` setting. Allows you to create themes like this:
-
-&lt;img src="https://cloud.githubusercontent.com/assets/13041/23768953/8fb5f43e-04c2-11e7-8159-6c7736b3fe88.png" width="500" /&gt;
-
-- wow
-- Thanks @henrikdahl ade9ad39fd1a79ac399abd1439ddce233bda103a
-
-## Improve CLI
-
-Adds support for `--help` and `--version`. One of many improvements to come to the `hyper` CLI!
-
-- Thanks @supersam654 edff890f5fcd4e975c42169153fe8c2be9039fd7
-
-## Bug fixes
-
-### Text flickering upon hover on certain platforms
-
-- Fixes #1490, #1575, #1579 (#1602)
-- Thanks @chabou 1f3ea081e8cbc97dff900cc0b9f9d588c44e13e8
-
-### Plugin Installation Error notification 
-
-An unfortunate alert that would show whenever you would launch Hyper is now gone. Sorry about that one.
-
-### Plugin installation on Windows
-
-We now correctly handling using the right sub-shell on `win32` to install plugins
-
-- Thanks @kwonoj 3df8274bf03fbfe75114781e160b33874cd73c3f
-
-### Plugin installation on Fish shell
-
-We now special case Fish to make it work
-
-- Thanks @henrikdahl 63ab33daa9d721cdc6e7bce630ede0e06da2b250
-
-### Fix config editing on Windows
-
-Bash on Windows now launches the correct program for editing the config
-
-- Thanks @stefanivic 36f96abb1d28ba85ebe678df2e87268b66aaf018
-
-### Fix bad state when closing a group of terms
-
-- Thanks @chabou 75b5eb7d3f29ece4872a0a4dd6c099f81907f88b
-
-## Meta improvements
-
-- Start to add some unit tests for low level functionality. Thanks @kandros 67d696329682daf359e02d1eac5bc2ccf7aaa660
-- Fix typo in default config @martinvd 7ae7a523d1cd2bd183ebe1ede3f420ad3db429e0
-- Bump electron @rauchg 12bda394beeda75b88f8f0eb69f5de0caa2b444f
-- Improve website and plugins documentation 
-  - @gsklee 717857ed6171a3f3edcfc6fcbd0cc267d023f65f
-  - @chabou 3fb2e04eae3409eadc03a0b42ac736265c2b7f2a
-- Improve default config with notes about where to find other tops @MatthiasWinkelmann fc829d23e8edb1160986d4eb51a9afda92403b94</releaseNotes>
+Huge thanks to @henrikdahl for their help!</releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <!--<dependencies>
