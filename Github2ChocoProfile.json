@@ -29,7 +29,7 @@
     "hyper":  {
                   "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco",
                   "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco\\hyper",
-                  "version":  "1.3.0",
+                  "version":  "1.3.1",
                   "Regex64Bit":  "hyper-Setup-.*.exe",
                   "githubRepo":  "zeit/hyper",
                   "installerType":  "exe",
@@ -80,7 +80,7 @@
                  "packageType":  "zip"
              },
     "Git-Credential-Manager-for-Windows":  {
-                                               "version":  "1.8.0",
+                                               "version":  "1.9.0",
                                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco",
                                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco\\template",
                                                "Regex32bit":  "GCMW-.*.exe",
@@ -116,7 +116,7 @@
                                "packageType":  "zip"
                            },
     "rssguard":  {
-                     "version":  "3.3.7",
+                     "version":  "3.4.0",
                      "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco",
                      "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco\\template",
                      "Regex32bit":  "rssguard-[^-]*-[^-]*-win32.7z",
