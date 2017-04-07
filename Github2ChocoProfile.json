@@ -71,7 +71,7 @@
                            "packageType":  "zip"
                        },
     "i2pd":  {
-                 "version":  "2.12.0",
+                 "version":  "2.13.0",
                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco",
                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco\\template",
                  "Regex64bit":  "i2pd_.*_win64_mingw.zip",
@@ -80,7 +80,7 @@
                  "packageType":  "zip"
              },
     "Git-Credential-Manager-for-Windows":  {
-                                               "version":  "1.9.0",
+                                               "version":  "1.9.1",
                                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco",
                                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco\\template",
                                                "Regex32bit":  "GCMW-.*.exe",

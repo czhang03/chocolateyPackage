@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces 
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements 
+-->
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>i2pd</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>2.13.0</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
+    <!-- ============================== -->
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>I2P Daemon</title>
+    <authors>PurpleI2P</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://github.com/PurpleI2P/i2pd</projectUrl>
+    <iconUrl>http://i2pd.website/images/favicon.png</iconUrl>
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>i2pd admin network encryption</tags>
+    <summary>Full C++ implementation of I2P client</summary>
+    <description>i2pd
+====
+
+[Русская версия](https://github.com/PurpleI2P/i2pd_docs_ru/blob/master/README.md)
+
+i2pd (I2P Daemon) is a full-featured C++ implementation of I2P client.
+
+I2P (Invisible Internet Protocol) is a universal anonymous network layer. 
+All communications over I2P are anonymous and end-to-end encrypted, participants
+don't reveal their real IP addresses. 
+
+I2P client is a software used for building and using anonymous I2P 
+networks. Such networks are commonly used for anonymous peer-to-peer 
+applications (filesharing, cryptocurrencies) and anonymous client-server 
+applications (websites, instant messengers, chat-servers).
+
+I2P allows people from all around the world to communicate and share information
+without restrictions.
+
+* [Website](http://i2pd.website)
+* [Documentation](https://i2pd.readthedocs.io/en/latest/)
+* [Wiki](https://github.com/PurpleI2P/i2pd/wiki)
+* [Tickets/Issues](https://github.com/PurpleI2P/i2pd/issues)
+* [Specifications](https://geti2p.net/spec)
+* [Twitter](https://twitter.com/hashtag/i2pd)
+
+Installing
+----------
+
+The easiest way to install i2pd is by using 
+[precompiled binaries](https://github.com/PurpleI2P/i2pd/releases/latest). 
+See [documentation](https://i2pd.readthedocs.io/en/latest/) for how to build 
+i2pd from source on your OS.
+
+**Supported systems:**
+
+* Linux x86/x64  - [![Build Status](https://travis-ci.org/PurpleI2P/i2pd.svg?branch=openssl)](https://travis-ci.org/PurpleI2P/i2pd)  
+* Windows        - [![Build status](https://ci.appveyor.com/api/projects/status/1908qe4p48ff1x23?svg=true)](https://ci.appveyor.com/project/PurpleI2P/i2pd)  
+* Mac OS X
+* FreeBSD
+* Android 
+* iOS
+
+Using i2pd
+----------
+
+See [documentation](https://i2pd.readthedocs.io/en/latest/usage.html) and 
+[example config file](https://github.com/PurpleI2P/i2pd/blob/openssl/docs/i2pd.conf).
+
+Donations
+---------
+
+BTC: 1K7Ds6KUeR8ya287UC4rYTjvC96vXyZbDY  
+DASH: Xw8YUrQpYzP9tZBmbjqxS3M97Q7v3vJKUF  
+LTC: LKQirrYrDeTuAPnpYq5y7LVKtywfkkHi59  
+ANC: AQJYweYYUqM1nVfLqfoSMpUMfzxvS4Xd7z  
+DOGE: DNXLQKziRPAsD9H3DFNjk4fLQrdaSX893Y 
+
+License
+-------
+
+This project is licensed under the BSD 3-clause license, which can be found in the file
+LICENSE in the root of the project source code.
+</description>
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <!-- =============================== -->
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-uninstall.extension" />
+    </dependencies>-->
+    <!-- chocolatey-uninstall.extension - If supporting 0.9.9.x (or below) and including a chocolateyUninstall.ps1 file to uninstall an EXE/MSI, you probably want to include chocolatey-uninstall.extension as a dependency. Please verify whether you are using a helper function from that package. -->
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+    <owners>chantisnake</owners>
+    <docsUrl>https://github.com/PurpleI2P/i2pd/wikis</docsUrl>
+    <releaseNotes>1. Persist local destination's tags 
+2. GOST R 34.10 signature types 9 and 10
+3. Exploratory tunnels configuration
+4. Known SAM issues got sorted out
+5. Inactive NTCP sockets get closed faster
+6. Fixed few memory leaks and memory usage improvements</releaseNotes>
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage</packageSourceUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/PurpleI2P/i2pd/blob/openssl/LICENSE</licenseUrl>
+    <bugTrackerUrl>https://github.com/PurpleI2P/i2pd/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/PurpleI2P/i2pd</projectSourceUrl>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
