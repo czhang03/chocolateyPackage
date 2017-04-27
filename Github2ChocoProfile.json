@@ -3,7 +3,7 @@
                     "Regex32bit":  "you-get-.*-win32.exe",
                     "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\you-get-choco",
                     "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\you-get-choco\\you-get",
-                    "version":  "0.4.652",
+                    "version":  "0.4.715",
                     "githubRepo":  "soimort/you-get",
                     "packageType":  "webFile"
                 },
@@ -11,7 +11,7 @@
                         "Regex32bit":  "Shadowsocks-.*.zip",
                         "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco",
                         "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco\\shadowsocks",
-                        "version":  "3.4.3",
+                        "version":  "4.0.1",
                         "githubRepo":  "shadowsocks/shadowsocks-windows",
                         "packageType":  "zip",
                         "sourceCode":  false
@@ -89,15 +89,6 @@
                                                "installerType":  "exe",
                                                "silentArg":  "/SILENT /NORESTART"
                                            },
-    "hugo":  {
-                 "version":  "0.19",
-                 "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hugo-choco",
-                 "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hugo-choco\\template",
-                 "Regex64bit":  "hugo_.*_Windows-64bit.zip",
-                 "Regex32bit":  "hugo_.*_Windows-32bit.zip",
-                 "githubRepo":  "spf13/hugo",
-                 "packageType":  "zip"
-             },
     "dnSpy":  {
                   "version":  "3.0.0",
                   "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco",
