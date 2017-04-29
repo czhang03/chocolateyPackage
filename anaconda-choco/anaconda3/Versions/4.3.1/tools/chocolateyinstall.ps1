@@ -12,7 +12,7 @@ $packageArgs = @{
   url           = $url
   url64bit      = $url64
  
-  silentArgs    = "/AddToPath=0 /InstallationType=AllUsers /RegisterPython=1 /D=$(Join-Path $ToolsDir 'Anaconda3') /S"
+  silentArgs    = "/S /InstallationType=AllUsers /RegisterPython=1 /AddToPath=0 /D=$(Join-Path $ToolsDir 'Anaconda3')"
   validExitCodes= @(0)
  
   softwareName  = 'Anaconda3'
