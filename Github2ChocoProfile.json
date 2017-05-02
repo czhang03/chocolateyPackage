@@ -113,5 +113,13 @@
                      "Regex32bit":  "rssguard-[^-]*-[^-]*-win32.7z",
                      "githubRepo":  "martinrotter/rssguard",
                      "packageType":  "zip"
-                 }
+                 },
+    "FStar":  {
+                  "version":  "0.9.4.0",
+                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\FStar-choco",
+                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\FStar-choco\\template",
+                  "Regex64bit":  "fstar_[\\d\\.]*_Windows_x64.zip",
+                  "githubRepo":  "FStarLang/FStar",
+                  "packageType":  "zip"
+              }
 }
