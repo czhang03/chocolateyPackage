@@ -19,7 +19,7 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.5.0",
+                       "version":  "2.7.0",
                        "Regex32Bit":  "rocketchat-desktop-setup-.*.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
@@ -40,7 +40,7 @@
                                 "Regex32bit":  "GitHub\\.VisualStudio\\.vsix$",
                                 "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco",
                                 "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco\\visualstudio-github",
-                                "version":  "2.2.0.8",
+                                "version":  "2.2.0.10",
                                 "githubRepo":  "github/VisualStudio",
                                 "packageType":  "vsix"
                             },
