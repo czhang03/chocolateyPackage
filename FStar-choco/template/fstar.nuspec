@@ -31,7 +31,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- ============================== -->
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>FStar</title>
+    <title>F* language</title>
     <authors>FStarLang</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.fstar-lang.org/</projectUrl>
@@ -44,6 +44,10 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 =====================================================
 
 [![Build status](https://travis-ci.org/FStarLang/FStar.svg?branch=master)](https://travis-ci.org/FStarLang/FStar)
+
+## Notice
+This package will install F* language with compatable version of z3.  
+It is recommended that you remove your z3 package and then install F*
 
 ### F\* website
 
@@ -118,9 +122,6 @@ see `LICENSE` for more details.
 
 </description>
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <dependencies>
-      <dependency id="z3" />
-    </dependencies>
     <!-- chocolatey-uninstall.extension - If supporting 0.9.9.x (or below) and including a chocolateyUninstall.ps1 file to uninstall an EXE/MSI, you probably want to include chocolatey-uninstall.extension as a dependency. Please verify whether you are using a helper function from that package. -->
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
