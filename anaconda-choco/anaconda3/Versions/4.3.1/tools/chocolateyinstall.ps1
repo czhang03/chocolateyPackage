@@ -2,8 +2,8 @@
  
  
 $packageName= 'anaconda3'
-$url        = 'http://repo.continuum.io/archive/Anaconda3-4.3.0-Windows-x86.exe'
-$url64      = 'http://repo.continuum.io/archive/Anaconda3-4.3.0-Windows-x86_64.exe'
+$url        = 'http://repo.continuum.io/archive/Anaconda3-4.3.1-Windows-x86.exe'
+$url64      = 'http://repo.continuum.io/archive/Anaconda3-4.3.1-Windows-x86_64.exe'
 $ToolsDir   = Get-ToolsLocation
  
 $packageArgs = @{
