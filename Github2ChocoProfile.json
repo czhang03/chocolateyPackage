@@ -11,7 +11,7 @@
                         "Regex32bit":  "Shadowsocks-.*.zip",
                         "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco",
                         "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco\\shadowsocks",
-                        "version":  "4.0.1",
+                        "version":  "4.0.2",
                         "githubRepo":  "shadowsocks/shadowsocks-windows",
                         "packageType":  "zip",
                         "sourceCode":  false
@@ -29,21 +29,13 @@
     "hyper":  {
                   "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco",
                   "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco\\hyper",
-                  "version":  "1.3.1",
+                  "version":  "1.3.3",
                   "Regex64Bit":  "hyper-Setup-.*.exe",
                   "githubRepo":  "zeit/hyper",
                   "installerType":  "exe",
                   "silentArg":  "--silent",
                   "packageType":  "installer"
               },
-    "visualstudio-github":  {
-                                "Regex32bit":  "GitHub\\.VisualStudio\\.vsix$",
-                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco",
-                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\visualstudio-github-choco\\visualstudio-github",
-                                "version":  "2.2.0.10",
-                                "githubRepo":  "github/VisualStudio",
-                                "packageType":  "vsix"
-                            },
     "spek":  {
                  "Regex32bit":  "spek-.*.msi",
                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\spek-choco",
@@ -80,7 +72,7 @@
                  "packageType":  "zip"
              },
     "Git-Credential-Manager-for-Windows":  {
-                                               "version":  "1.9.1",
+                                               "version":  "1.10.0",
                                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco",
                                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco\\template",
                                                "Regex32bit":  "GCMW-.*.exe",
