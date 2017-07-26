@@ -23,8 +23,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>
-    </version>
+    <version>3.4.1</version>
     <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
@@ -87,8 +86,31 @@ RSS Guard is simple, light and easy-to-use RSS/ATOM feed aggregator developed us
     <projectSourceUrl>https://github.com/martinrotter/rssguard</projectSourceUrl>
     <docsUrl>https://github.com/martinrotter/rssguard/wikis</docsUrl>
     <licenseUrl>https://github.com/martinrotter/rssguard/blob/master/LICENSE.md</licenseUrl>
-    <releaseNotes>
-    </releaseNotes>
+    <releaseNotes>Added:
+▪ Toolbar editor can reset toolbars.
+▪ Toolbar editor now uses iconified tool buttons.
+▪ Double mouse click on feed or recycle bin items in feeds list now opens all messages of the item in newspaper mode.
+▪ Columns in message list can be hidden/shown/reordered with context menu. (issue #115)
+▪ Auto-update notification is now switchable. (issue #119)
+▪ Messages which are not removed or restored are not instantly deleted from list, they are striked-through instead. This is more resource friendly.
+▪ Message list is now not reloaded when doing batch message operations.
+▪ Message list SQL queries are now fully adjustable. This will allow for integration of labels functionality in the future.
+▪ Auto-update status of feeds is now more general and complete. (issue #91)
+▪ Display feed title in list of messages. (issue #97)
+▪ Displayed feeds can now be sorted by multiple columns. Do you want to sort by author, and THEN by title? Simply click first "Title" column, then on "Author" column. If you hold CTRL during sorting, the sort is done in reverse column order.
+
+Changed:
+▪ Updating of RSS Guard now uses GitHub API. (issue #109)
+▪ Better ATOM/RSS parsing, respects now XML namespaces, bit better link parsing and other stuff. (issue #104)
+▪ Folder which holds SQL scripts got renamed to "sql".
+▪ Tweaked some conditions for determining newly "updated" messages in ATOM format. (issue #103)
+
+Fixed:
+▪ Tab not closing after close button click on Mac OS X. (#126)
+▪ Wrong tab bar item close button position on Mac OS X. (#128)
+▪ Settings and database are now stored in more standard directories on Mac OS X. (#127)
+▪ Fixed regression when restoring deleted messages.
+▪ Crash in TT-RSS plugin on application exit, when TT-RSS user needed to be logged out.</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

@@ -6,8 +6,8 @@
 This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
 
 * the package xmlns schema url may cause issues with nuget.exe
-* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
-* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces 
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements 
 -->
 <!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
 <!-- * If you are an organization making private packages, you probably have no issues here -->
@@ -19,7 +19,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>RssGuard</id>
+    <id>ungoogled-chromium</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
@@ -31,11 +31,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- ============================== -->
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Rss Guard</title>
-    <authors>martinrotter</authors>
+    <title>ungoogled-chromium</title>
+    <authors>Eloston</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://github.com/martinrotter/rssguard</projectUrl>
-    <iconUrl>https://github.com/martinrotter/rssguard/raw/master/resources/graphics/rssguard_256.png</iconUrl>
+    <projectUrl>https://github.com/Eloston/ungoogled-chromium</projectUrl>
+    <iconUrl>https://www.chromium.org/config/customLogo.gif</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is is required for the community feed -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
@@ -44,26 +44,49 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>rssguard rss Qt</tags>
-    <summary>RSS Guard is simple (yet powerful) feed reader. This is the official project repository.</summary>
-    <description>RSS Guard
-=========
+    <tags>ungoogled-chromium chromium chrome google browser web</tags>
+    <summary>Modifications to Google Chromium for removing Google integration and enhancing privacy, control, and transparency</summary>
+    <description>
 
-[![AppVeyor](https://img.shields.io/appveyor/ci/martinrotter/rssguard.svg?maxAge=360)](https://ci.appveyor.com/project/martinrotter/rssguard)
-[![Travis CI](https://img.shields.io/travis/martinrotter/rssguard.svg?maxAge=360)](https://travis-ci.org/martinrotter/rssguard)
-[![Total downloads](https://img.shields.io/github/downloads/martinrotter/rssguard/total.svg?maxAge=360)](#)
-[![Version](https://img.shields.io/github/release/martinrotter/rssguard.svg?maxAge=360)](#)
-[![GitHub issues](https://img.shields.io/github/issues/martinrotter/rssguard.svg?maxAge=360)](#)
-[![AUR](https://img.shields.io/aur/votes/rssguard.svg?maxAge=3600)](https://aur.archlinux.org/packages/rssguard/)
-[![License](https://img.shields.io/github/license/martinrotter/rssguard.svg?maxAge=360000)](#)
+A number of features or background services communicate with Google servers despite the absence of an associated Google account or compiled-in Google API keys. Furthermore, the normal build process for Chromium involves running Google's own high-level commands that invoke many scripts and utilities, some of which download and use pre-built binaries provided by Google. Even the final build output includes some pre-built binaries. Fortunately, the source code is available for everything.
 
-Welcome to RSS Guard website. You can find here basic information.
+ungoogled-chromium is a set of configuration flags, patches, and custom scripts. These components altogether strive to accomplish the following:
+* Disable or remove offending services and features that communicate with Google or weaken privacy
+* Strip binaries from the source tree, and use those provided by the system or build them from source
+* Add, modify, or disable features that inhibit control and transparency (these changes are minor and do not have significant impacts on the general user experience)
 
-RSS Guard is simple, light and easy-to-use RSS/ATOM feed aggregator developed using Qt framework which supports online feed synchronization.
+**ungoogled-chromium is looking for contributors**. See the Contributing, Reporting, Contacting section for more information.
 
-#### You can support this project via donations [HERE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=XMWPLPK893VH4).
+## Building
 
-#### See [Wiki](https://github.com/martinrotter/rssguard/wiki) for more information about features, download links and other stuff.
+[See BUILDING.md](BUILDING.md)
+
+## Contributing, Reporting, Contacting
+
+Use the [Issue Tracker](//github.com/Eloston/ungoogled-chromium/issues) for problems, suggestions, and questions. There is also a [Gitter chat room](https://gitter.im/ungoogled-software/Lobby) that serves the same purpose.
+
+Contributors are welcome!
+
+If you are interested in making a change, I, Eloston, encourage you to submit a pull request. Please read the Pull requests section below for submission guidelines.
+* Additionally, issues marked with the `help wanted` tag are changes I need others to help with. Please read the issue's comment thread for more details on what needs to be done.
+
+### Pull requests
+
+Pull requests are also welcome. Here are some guidelines:
+* Changes that fix certain configurations or add small features and do not break compatibility are generally okay
+* Larger changes, such as those that change `buildlib`, should be proposed through an issue first before submitting a pull request.
+* When in doubt, propose the idea through an issue first.
+
+## Credits
+
+[Iridium Browser](//iridiumbrowser.de/)
+
+[Inox patchset](//github.com/gcarq/inox-patchset)
+
+[Debian](//tracker.debian.org/pkg/chromium-browser)
+
+[The Chromium Project](//www.chromium.org/)
+
 </description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <!-- =============================== -->
@@ -80,13 +103,13 @@ RSS Guard is simple, light and easy-to-use RSS/ATOM feed aggregator developed us
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
     <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
-    <bugTrackerUrl>https://github.com/martinrotter/rssguard/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/Eloston/ungoogled-chromium/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage</packageSourceUrl>
     <owners>chantisnake</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/martinrotter/rssguard</projectSourceUrl>
-    <docsUrl>https://github.com/martinrotter/rssguard/wikis</docsUrl>
-    <licenseUrl>https://github.com/martinrotter/rssguard/blob/master/LICENSE.md</licenseUrl>
+    <projectSourceUrl>https://github.com/Eloston/ungoogled-chromium</projectSourceUrl>
+    <docsUrl>https://github.com/Eloston/ungoogled-chromium/wikis</docsUrl>
+    <licenseUrl>https://github.com/Eloston/ungoogled-chromium/blob/master/LICENSE</licenseUrl>
     <releaseNotes>
     </releaseNotes>
   </metadata>
