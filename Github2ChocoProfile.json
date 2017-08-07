@@ -72,7 +72,7 @@
                  "packageType":  "zip"
              },
     "Git-Credential-Manager-for-Windows":  {
-                                               "version":  "1.10.1",
+                                               "version":  "1.12.0",
                                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco",
                                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco\\template",
                                                "Regex32bit":  "GCMW-.*.exe",
