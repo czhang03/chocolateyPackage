@@ -19,7 +19,7 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.7.0",
+                       "version":  "2.8.0",
                        "Regex32Bit":  "rocketchat-setup-.*.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
