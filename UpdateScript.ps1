@@ -12,24 +12,24 @@ foreach ($packageName in $updatedPackages) {
     # gether info
     $package = $GTCProfile.$packageName
     $newVersion = $package.version
-    $packageDir = $package.packagePath 
+    $packageDir = $package.packagePath
     $newVersionDir = "$packageDir\Versions\$newVersion"
-    
+
     # go to new version path
     Set-Location -Path $newVersionDir
 
-    # pack and push to choco   
+    # pack and push to choco
     Write-Host 'packing and pushing to choco' -ForegroundColor Yellow
-    Write-Host 
-    Start-Process -FilePath "choco.exe" -ArgumentList "pack" -Wait
-    Start-Process -FilePath "choco.exe" -ArgumentList "push" -Wait
+    Write-Host
+    Start-Process -FilePath "choco.exe" -ArgumentList "pack" -Wait -NoNewWindow
+    Start-Process -FilePath "choco.exe" -ArgumentList "push" -Wait -NoNewWindow
 
     # add and commit to git
     Write-Host 'updating git' -ForegroundColor Yellow
     Write-Host
     Set-Location $packageDir
-    Start-Process -FilePath "git.exe" -ArgumentList "add ." -Wait
-    Start-Process -FilePath 'git.exe' -ArgumentList "commit -m 'update $packageName to $newVersion'"
+    Start-Process -FilePath "git.exe" -ArgumentList "add ." -Wait -NoNewWindow
+    Start-Process -FilePath 'git.exe' -ArgumentList "commit -m 'update $packageName to $newVersion'" -NoNewWindow
 }
 
 
