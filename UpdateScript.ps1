@@ -7,7 +7,9 @@ $GTCProfile = Read-GTCProfile
 $CurrentLocation = Get-Location
 
 foreach ($packageName in $updatedPackages) {
-    Write-Host "Pushing Package $packageName"
+    Write-Host
+    Write-Host
+    Write-Host "Pushing Package $packageName" -ForegroundColor Magenta
 
     # gether info
     $package = $GTCProfile.$packageName
