@@ -29,7 +29,7 @@ foreach ($packageName in $updatedPackages) {
     Write-Host
     Set-Location $packageDir
     Start-Process -FilePath "git.exe" -ArgumentList "add ." -Wait -NoNewWindow
-    Start-Process -FilePath 'git.exe' -ArgumentList "commit -m 'update $packageName to $newVersion'" -NoNewWindow
+    Start-Process -FilePath 'git.exe' -ArgumentList "commit -m `"update $packageName to $newVersion`"" -NoNewWindow
 }
 
 Write-Host 'pushing to git'
