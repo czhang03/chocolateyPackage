@@ -3,7 +3,7 @@
                     "Regex32bit":  "you-get-.*-win32.exe",
                     "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\you-get-choco",
                     "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\you-get-choco\\you-get",
-                    "version":  "0.4.775",
+                    "version":  "0.4.915",
                     "githubRepo":  "soimort/you-get",
                     "packageType":  "webFile"
                 },
@@ -29,7 +29,7 @@
     "hyper":  {
                   "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco",
                   "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\hyper-choco\\hyper",
-                  "version":  "1.4.3",
+                  "version":  "1.4.7",
                   "Regex64Bit":  "hyper-Setup-.*.exe",
                   "githubRepo":  "zeit/hyper",
                   "installerType":  "exe",
