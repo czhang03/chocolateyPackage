@@ -93,7 +93,7 @@
                      "version":  "3.4.2",
                      "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco",
                      "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco\\template",
-                     "Regex32bit":  "rssguard-[^-]*-[^-]*-win64.7z",
+                     "Regex64bit":  "rssguard-[^-]*-[^-]*-win64.7z",
                      "githubRepo":  "martinrotter/rssguard",
                      "packageType":  "zip"
                  },
