@@ -10,12 +10,17 @@
     <owners>Chantisnake</owners>
     <summary>a python distribution created by continuum</summary>
     <description>
-        a python distribution created by continuum
-        this installation:
-          1. will not add anaconda python to path,
-          2. will register anaconda python at defualt python2
-          3. will install for all user
-          4. will install in your `$ToolsDir\Anaconda2` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) default is `C:\Tools\Anaconda3`
+A Python distribution created by Continuum
+By default, this installation:
+  * will not add anaconda python to path,
+  * will register anaconda python at default python3
+  * will install for all users
+  * will install in your `$ToolsDir\Anaconda3` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) default is `C:\Tools\`
+You can provide parameters for the install, per Anaconda docs at https://conda.io/docs/user-guide/install/windows.html
+  */InstallationType:[AllUsers|JustMe]
+  */AddToPath:[0|1]
+  */RegisterPython:[0|1]
+  */D:(installation path)
     </description>
     <projectUrl>https://www.continuum.io/why-anaconda</projectUrl>
     <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage/tree/master/anaconda-choco/anaconda3</packageSourceUrl>
