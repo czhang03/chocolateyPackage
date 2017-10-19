@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
  
  
 $packageName= 'anaconda2'
@@ -64,10 +64,10 @@ $packageArgs = @{
   checksumType64= 'sha256'
 }
  
-Write-Host 'installing anaconda2, this can take a long time, because the installer will write tons of files on your disk' -ForegroundColor Magenta
-Write-Host 'Please sit back and relax' -ForegroundColor Magenta
-Write-Host 'This usually will take 10-15 mins on an SSD, and about 30 mins on HDD' -ForegroundColor Magenta
-Write-Host ''
-Write-Host 'If you want to make sure the program is running, you can open Task Manager' -ForegroundColor Magenta
-Write-Host 'you will find the installer running in Background Process' -ForegroundColor Magenta
+Write-Warning 'installing anaconda3, this can take a long time, because the installer will write tons of files on your disk'
+Write-Warning 'Please sit back and relax'
+Write-Warning 'This usually will take 10-15 mins on an SSD, and about 30 mins on HDD'
+Write-Warning ''
+Write-Warning 'If you want to make sure the program is running, you can open Task Manager'
+Write-Warning 'you will find the installer running in Background Process'
 Install-ChocolateyPackage @packageArgs
