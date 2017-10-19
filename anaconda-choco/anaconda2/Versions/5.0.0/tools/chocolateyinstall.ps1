@@ -64,7 +64,7 @@ $packageArgs = @{
   checksumType64= 'sha256'
 }
  
-Write-Warning 'installing anaconda3, this can take a long time, because the installer will write tons of files on your disk'
+Write-Warning 'installing anaconda2, this can take a long time, because the installer will write tons of files on your disk'
 Write-Warning 'Please sit back and relax'
 Write-Warning 'This usually will take 10-15 mins on an SSD, and about 30 mins on HDD'
 Write-Warning ''
