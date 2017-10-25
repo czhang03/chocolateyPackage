@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>anaconda2</id>
     <title>anaconda2</title>
-    <version>5.0.0</version>
+    <version>5.0.0.20171020</version>
     <authors>Continuum</authors>
     <owners>Chantisnake</owners>
     <summary>a python distribution created by continuum</summary>

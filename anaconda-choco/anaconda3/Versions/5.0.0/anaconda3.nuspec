@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>anaconda3</id>
     <title>anaconda3</title>
-    <version>5.0.0</version>
+    <version>5.0.0.20171020</version>
     <authors>Continuum</authors>
     <owners>Chantisnake</owners>
     <summary>a python distribution created by continuum</summary>
@@ -17,7 +17,7 @@ By default, this installation:
   * will register anaconda python at default python3
   * will install for all users
   * will install in your `$ToolsDir\Anaconda3` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) default is `C:\Tools\`
-  
+
 You can provide parameters for the install, per Anaconda docs at https://conda.io/docs/user-guide/install/windows.html
 
   * /InstallationType:[AllUsers|JustMe]
