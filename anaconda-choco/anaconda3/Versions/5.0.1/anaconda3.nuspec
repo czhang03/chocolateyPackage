@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>anaconda3</id>
+    <title>anaconda3</title>
+    <version>5.0.1</version>
+    <authors>Continuum</authors>
+    <owners>Chantisnake</owners>
+    <summary>a python distribution created by continuum</summary>
+    <description>
+A Python distribution created by Continuum
+By default, this installation:
+
+  * will not add anaconda python to path,
+  * will register anaconda python at default python3
+  * will install for all users
+  * will install in your `$ToolsDir\Anaconda3` (`$ToolsDir` is the path returned by `Get-ToolsLocation`) default is `C:\Tools\`
+
+You can provide parameters for the install, per Anaconda docs at https://conda.io/docs/user-guide/install/windows.html
+
+  * /InstallationType:[AllUsers|JustMe]
+  * /AddToPath:[0|1]
+  * /RegisterPython:[0|1]
+  * /D:(installation path)
+    </description>
+    <projectUrl>https://www.continuum.io/why-anaconda</projectUrl>
+    <packageSourceUrl>https://github.com/chantisnake/chocolateyPackage/tree/master/anaconda-choco/anaconda3</packageSourceUrl>
+    <!--<projectSourceUrl></projectSourceUrl>-->
+    <docsUrl>https://docs.continuum.io/anaconda/</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/continuumio/anaconda-issues</bugTrackerUrl>
+    <tags>anaconda2 admin python</tags>
+    <copyright></copyright>
+    <licenseUrl>https://docs.continuum.io/anaconda/eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/chantisnake/chocolateyPackage/raw/master/anaconda-choco/logo-anaconda.png</iconUrl>
+    <releaseNotes></releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+  </files>
+</package>
