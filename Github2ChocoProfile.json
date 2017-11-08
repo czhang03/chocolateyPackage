@@ -59,7 +59,7 @@
                            "Regex64bit":  "SimpleDNSCrypt64_.*.zip$",
                            "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
                            "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
-                           "version":  "0.4.2",
+                           "version":  "0.4.3",
                            "githubRepo":  "bitbeans/SimpleDnsCrypt",
                            "packageType":  "zip"
                        },
@@ -91,7 +91,7 @@
                   "packageType":  "zip"
               },
     "rssguard":  {
-                     "version":  "3.5.1",
+                     "version":  "3.5.4",
                      "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco",
                      "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco\\template",
                      "Regex64bit":  "rssguard-[^-]*-[^-]*-win64.7z",
