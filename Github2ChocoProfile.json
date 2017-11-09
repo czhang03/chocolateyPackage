@@ -82,14 +82,6 @@
                                                "installerType":  "exe",
                                                "silentArg":  "/SILENT /NORESTART"
                                            },
-    "dnSpy":  {
-                  "version":  "4.0.0",
-                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco",
-                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco\\template",
-                  "Regex32bit":  "dnSpy.zip",
-                  "githubRepo":  "0xd4d/dnSpy",
-                  "packageType":  "zip"
-              },
     "rssguard":  {
                      "version":  "3.5.4",
                      "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco",
