@@ -19,7 +19,7 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.9.0",
+                       "version":  "2.10.0",
                        "Regex32Bit":  "rocketchat-setup-.*.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
@@ -83,7 +83,7 @@
                                                "silentArg":  "/SILENT /NORESTART"
                                            },
     "dnSpy":  {
-                  "version":  "3.0.0",
+                  "version":  "4.0.0",
                   "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco",
                   "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\dnSpy-choco\\template",
                   "Regex32bit":  "dnSpy.zip",
