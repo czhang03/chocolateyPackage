@@ -19,7 +19,7 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.10.0",
+                       "version":  "2.10.1",
                        "Regex32Bit":  "rocketchat-setup-.*.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
@@ -64,7 +64,7 @@
                            "packageType":  "zip"
                        },
     "i2pd":  {
-                 "version":  "2.15.0",
+                 "version":  "2.16.0",
                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco",
                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco\\template",
                  "Regex64bit":  "i2pd_.*_win64_mingw.zip",
