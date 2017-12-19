@@ -64,7 +64,7 @@
                            "packageType":  "zip"
                        },
     "i2pd":  {
-                 "version":  "2.16.0",
+                 "version":  "2.17.0",
                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco",
                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco\\template",
                  "Regex64bit":  "i2pd_.*_win64_mingw.zip",
@@ -73,7 +73,7 @@
                  "packageType":  "zip"
              },
     "Git-Credential-Manager-for-Windows":  {
-                                               "version":  "1.12.0",
+                                               "version":  "1.14.0",
                                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco",
                                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco\\template",
                                                "Regex32bit":  "GCMW-.*.exe",
@@ -83,7 +83,7 @@
                                                "silentArg":  "/SILENT /NORESTART"
                                            },
     "rssguard":  {
-                     "version":  "3.5.4",
+                     "version":  "3.5.5",
                      "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco",
                      "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rssguard-choco\\template",
                      "Regex64bit":  "rssguard-[^-]*-[^-]*-win64.7z",
