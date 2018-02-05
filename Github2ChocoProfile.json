@@ -11,7 +11,7 @@
                         "Regex32bit":  "Shadowsocks-.*.zip",
                         "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco",
                         "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco\\shadowsocks",
-                        "version":  "4.0.6",
+                        "version":  "4.0.7",
                         "githubRepo":  "shadowsocks/shadowsocks-windows",
                         "packageType":  "zip",
                         "sourceCode":  false
@@ -19,11 +19,11 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.10.1",
+                       "version":  "2.10.2",
                        "Regex32Bit":  "rocketchat-setup-.*.exe",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
-                       "silentArg":  "/S",
+                       "silentArg":  "/S /allusers",
                        "packageType":  "installer"
                    },
     "hyper":  {
@@ -64,7 +64,7 @@
                            "packageType":  "zip"
                        },
     "i2pd":  {
-                 "version":  "2.17.0",
+                 "version":  "2.18.0",
                  "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco",
                  "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\i2pd-choco\\template",
                  "Regex64bit":  "i2pd_.*_win64_mingw.zip",
