@@ -19,7 +19,7 @@
     "rocketchat":  {
                        "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco",
                        "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\rocketchatelectron-choco\\rocketchat",
-                       "version":  "2.10.4",
+                       "version":  "2.10.5",
                        "Regex32Bit":  "rocketchat-setup-.*.exe$",
                        "githubRepo":  "RocketChat/Rocket.Chat.Electron",
                        "installerType":  "exe",
@@ -55,13 +55,15 @@
                       "PackageType":  "zip"
                   },
     "simplednscrypt":  {
-                           "Regex32bit":  "SimpleDNSCrypt_.*.zip$",
-                           "Regex64bit":  "SimpleDNSCrypt64_.*.zip$",
+                           "Regex32bit":  "SimpleDNSCrypt\\.msi$",
+                           "Regex64bit":  "SimpleDNSCrypt64\\.msi$",
                            "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
                            "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
-                           "version":  "0.4.3",
+                           "version":  "0.4.5",
                            "githubRepo":  "bitbeans/SimpleDnsCrypt",
-                           "packageType":  "zip"
+                           "installerType":  "msi",
+                           "silentArg":  "/quiet",
+                           "packageType":  "installer"
                        },
     "i2pd":  {
                  "version":  "2.18.0",
