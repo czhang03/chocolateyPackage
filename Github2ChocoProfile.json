@@ -62,7 +62,7 @@
                            "version":  "0.4.7",
                            "githubRepo":  "bitbeans/SimpleDnsCrypt",
                            "installerType":  "msi",
-                           "silentArg":  "/passive",
+                           "silentArg":  "/quiet",
                            "packageType":  "installer"
                        },
     "i2pd":  {
