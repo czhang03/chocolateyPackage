@@ -1,3 +1,6 @@
+$orignalProtocol = [System.Net.ServicePointManager]::SecurityProtocol
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;
+
 Write-Host "Updateing all Packages" -ForegroundColor Yellow
 Write-Host
 Write-Host
@@ -40,3 +43,5 @@ Start-Process -FilePath 'git.exe' -ArgumentList "pull origin master" -Wait -NoNe
 Start-Process -FilePath 'git.exe' -ArgumentList 'push origin master' -Wait -NoNewWindow
 
 Set-Location -Path $CurrentLocation
+
+[System.Net.ServicePointManager]::SecurityProtocol = $orignalProtocol
