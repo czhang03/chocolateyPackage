@@ -11,7 +11,7 @@
                         "Regex32bit":  "Shadowsocks-.*.zip",
                         "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco",
                         "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\shadowsocks-choco\\shadowsocks",
-                        "version":  "4.0.8",
+                        "version":  "4.0.9",
                         "githubRepo":  "shadowsocks/shadowsocks-windows",
                         "packageType":  "zip",
                         "sourceCode":  false
@@ -59,7 +59,7 @@
                            "Regex64bit":  "SimpleDNSCrypt64\\.msi$",
                            "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco",
                            "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\simplednscrypt-choco\\simplednscrypt",
-                           "version":  "0.5.2",
+                           "version":  "0.5.4",
                            "githubRepo":  "bitbeans/SimpleDnsCrypt",
                            "installerType":  "msi",
                            "silentArg":  "/quiet",
@@ -75,7 +75,7 @@
                  "packageType":  "zip"
              },
     "Git-Credential-Manager-for-Windows":  {
-                                               "version":  "1.14.0",
+                                               "version":  "1.15.2",
                                                "packagePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco",
                                                "templatePath":  "C:\\Users\\zcsxo\\GithubRepos\\chocolateyPackage\\Git-Credential-Manager-for-Windows-choco\\template",
                                                "Regex32bit":  "GCMW-.*.exe",
